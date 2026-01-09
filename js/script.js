@@ -41,6 +41,20 @@
 // gradiente fundo - cima p/ baixo: #332f62; #3c276a; #261e43;
 
 
+// Continuar fazendo as requisições para cada cidade, serão 5 promise.all;
+
+// IDEIA:
+// Criar função genérica para colocar objeto e aplicar no html;
+// função terá como parâmetro nome do valor que está no array(será usado no objeto para pegar os dados da requisição de cada cidade);
+// função também terá uma aréa de aplicar no html, usará as consts e o obj e suas propriedades(tem q estar dentro da mesma função do objeto)
+
+// Looping:
+// Pegar todos os cards(com container q engloba todos), fazer looping p/ acessar cada card(índice) e a card ele chama a função genérica com o parâmetro
+
+
+
+
+
 
 // https://api.openweathermap.org/data/2.5/weather?&appid=3d4e1c3f7c4dbe48c4d97e970f8d9062&name=sãopaulo
 
@@ -142,53 +156,70 @@ function slidersCards(arrowControls, currentItem, maxCards, cards ) {
 
 
 // request for API:
+// URL: https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}
+// apiKey: 3d4e1c3f7c4dbe48c4d97e970f8d9062;
+
+// variables request:
+const cityName = document.querySelectorAll(".titleCityCard");
+const temperatura = document.querySelectorAll(".numTemperatura");
+const imgTemperatura = document.querySelectorAll(".imgTemperaturaTag");
+const descricao = document.querySelectorAll(".descricaoTemp");
+const vento = document.querySelectorAll(".numVento");
+const umidade = document.querySelectorAll(".numUmidade");
 
 
 
 
+// apikey
+const apiKey = "3d4e1c3f7c4dbe48c4d97e970f8d9062";
+
+// function com requests região nordeste:
+async function requests() {
 
 
+const [salvador, maceio] = await Promise.all([
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=salvador,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
+        return resp1.json();
+    }).then(data1 => {
+        return data1;
+    }).catch(error1 => {
+        console.log(error1);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Maceió,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+        return resp2.json();
+    }).then(data2 => {
+        return data2;
+    }).catch(error2 => {
+        console.log(error2);
+    })
 
 
+])
+
+// objeto 1 - salvador
+const obj1 = {
+    name: salvador.name,
+    temp: salvador.main.temp.toFixed(0),
+    icon: salvador.weather[0].icon,
+    description: salvador.weather[0].description,
+    speed: salvador.wind.speed,
+    humidity: salvador.main.humidity,
+}
+
+// aplicando elementos no html do card 1:
+cityName[0].textContent = obj1.name;
+temperatura[0].textContent = obj1.temp + "°";
+imgTemperatura[0].setAttribute("src", `https://openweathermap.org/img/wn/${obj1.icon}.png`);
+descricao[0].textContent = obj1.description;
+vento[0].textContent = obj1.speed + "Km/h";
+umidade[0].textContent = obj1.humidity + "%"; 
 
 
+// console.log(`Cidade: ${salvador.name}, Temp: ${salvador.main.temp.toFixed(0)}, descrição: ${salvador.weather[0].description}`);
+// console.log(maceio);
 
-// arrowControls1.forEach((arrow) => {
-//     arrow.addEventListener("click", () => {
-//         // console.log(maxCards);
+// console.log(imgTemperatura);
 
-//         const arrowLeft = arrow.classList.contains("arrow-left");
-        
-//         if(arrowLeft) {
-//             console.log("left");
-//             currentItem1 -= 1;
-//         } else {
-//             console.log("right");
-//             currentItem1 += 1;
+}
 
-//         }
-        
-//         if (currentItem >= maxCards1) {
-//             console.log(" valor maior q cards: " + currentItem1);
-//             currentItem1 = 0;
-//         }
-//         if (currentItem < 0) {
-//             console.log("valor menor q zero: " + currentItem1);
-//             currentItem1 = maxCards1 - 1;
-//         }
-
-        
-//         cards1[currentItem1].scrollIntoView({
-//             // evita o scrool vertical quando o método é chamado, o "nearest" possibilita ele se manter o alinhamento do container.
-//            block: "nearest",
-
-//             inline: "center",
-//             behavior: "smooth",
-//         });
-//         console.log(currentItem1);
-
-//     })
-// })
-// // arrowControls.addEventListener("click", () => {
-// //     console.log(cards);
-// // })
+requests();
