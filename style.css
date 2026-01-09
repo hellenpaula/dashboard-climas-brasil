@@ -1,0 +1,313 @@
+
+
+/* FAZER: */
+/* HEADER: 
+- colocar img fundo ☑️
+- estilizar menu(mouse on, cor, transform); ☑️
+- escolher fonte título principal ☑️
+- trocar cores fonte ☑️
+
+/* MAIN: 
+- APLICAR FUNCIONALIDADE DO CARROSSEL OS CARDS
+- DECIDIR CORES FINAIS
+- CRIAR VARIÁVEIS DAS CORES
+- COLOCAR ANIMAÇÃO NOS CARDS AO PASSAR MOUSE(CRESCER, APP SOMBRA)
+
+/* FOOTER: 
+- CRIAR LAYOUT FOOTER
+
+
+
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-image: linear-gradient(180deg, #332f62, #3c276a, #261e43);
+}
+
+/* header */
+
+.headerTag {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 390px;
+    background-image: url("img/img bandeira 2.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.menuTag {
+    display: flex;
+    justify-content: center;
+    padding: 38px 0 78px 0;
+}
+
+
+
+.listTag {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 68px;
+    color: white;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding: 0 5px;
+
+}
+
+.itemList {
+    transition: all 0.2s;
+    
+}
+
+.itemList:hover {
+    color:rgb(225, 225, 225);
+    cursor: pointer;
+    
+}
+
+.homeArea {
+    text-align: initial;
+    color: white;
+    max-width: 500px;
+    padding: 0 20px 80px 20px;
+}
+
+.titleHome {
+    /* text-align: left; */
+    font-size: 40px;
+    font-family:  "DM Serif Display", serif;
+    font-weight: 500;
+}
+
+.homeArea p {
+    font-size: 14px ;
+}
+
+
+.linhaHoriz {
+    border: 0.2px solid white;
+    margin: -5px 0 13px 0;
+        width: 97%;
+    
+}
+
+
+/* main area*/
+
+.mainArea {
+    /* background-image: linear-gradient(180deg, #332f62, #3c276a, #261e43); */
+    padding: 10px 0 115px 0;
+}
+
+.containerMain {
+    padding: 50px 40px;
+    position: relative;
+}
+
+.titleRegion {
+    color: white;
+    padding: 0 0 30px 0;
+}
+
+
+/* arrow */
+
+.divArrows {
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    position: absolute;
+    font-size: 42px;
+    color: white;
+
+}
+
+.arrow-left {
+    /* top:0;
+    bottom:0;
+    left:0;
+    right: auto; */
+    left: 0px;
+    right: auto;
+}
+
+.arrow-right {
+    right: 0px;
+    left: auto;
+}
+
+.containerCards {
+    display: flex;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+    padding: 0 0 0 0;
+    overflow-x: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+
+    /* justify-content: center; */
+    margin: 0 10px;
+}
+
+.card {
+    background-color: white;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.purple {
+    background: #4725cf;
+    color: white;
+}
+
+.gray {
+    background: rgb(213, 213, 213);
+    color: #4725cf;
+}
+
+.temperaturaCity {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    gap: 5px;
+    margin-bottom: 26px;
+    width: 152px
+
+}
+
+.numTemperatura {
+    font-size: 30px;
+}
+
+.imgTemperaturaEDescDiv img {
+    width: 85px;
+    /* : #3c276a; */
+    
+
+}
+
+.imgTemperaturaEDescDiv p {
+    margin: -20px 0 0 0;
+}
+
+.infosExtrasDiv {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* footer: */
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background: #a8b7c7;
+    padding: 46px 10px;
+    text-align: center;
+}
+
+.titleFooter {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.descricaoFooter {
+    font-size: 16px;
+    padding: 18px 0 0;
+}
+
+.divLinks {
+    padding: 20px 0 0;
+}
+
+.linkFooter {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.titleLink {
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+    .headerTag {
+        align-items: initial;
+
+        height: 420px;
+        background-position: center;
+
+    }
+    
+    .homeArea {
+        padding: 0 40px 80px 40px; 
+        text-align: initial;
+    }
+
+    .listTag {
+        gap: 120px;
+    }
+
+    .titleHome {
+        font-size: 45px;
+    }
+
+    .containerCards {
+        justify-content: left;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .headerTag {
+        height: 695px;
+        max-height: 705px;
+        display: flex;
+        gap: 90px;
+
+        background-position: right 30% center;
+    }
+    
+    .homeArea {
+        max-width: 600px;
+        padding: 0 1px 80px  70px;
+    }
+
+    .titleHome {
+        font-size: 54px;
+    }
+
+    .homeArea p {
+        font-size: 14px ;
+    }
+}
