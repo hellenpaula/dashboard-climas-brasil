@@ -177,7 +177,7 @@ const apiKey = "3d4e1c3f7c4dbe48c4d97e970f8d9062";
 async function requests() {
 
 
-const [salvador, maceio] = await Promise.all([
+const [salvador, maceio, aracaju, recife, joaoPessoa, natal, fortaleza, saoLuis, teresina] = await Promise.all([
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=salvador,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
         return resp1.json();
     }).then(data1 => {
@@ -191,35 +191,128 @@ const [salvador, maceio] = await Promise.all([
         return data2;
     }).catch(error2 => {
         console.log(error2);
-    })
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Aracaju,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp3 => {
+        return resp3.json();
+    }).then(data3 => {
+        return data3;
+    }).catch(error3 => {
+        console.log(error3);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Recife,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp4 => {
+        return resp4.json();
+    }).then(data4 => {
+        return data4;
+    }).catch(error4 => {
+        console.log(error4);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=João Pessoa,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp5 => {
+        return resp5.json();
+    }).then(data5 => {
+        return data5;
+    }).catch(error5 => {
+        console.log(error5);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Natal,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp6 => {
+        return resp6.json();
+    }).then(data6 => {
+        return data6;
+    }).catch(error6 => {
+        console.log(error6);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Fortaleza,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp7 => {
+        return resp7.json();
+    }).then(data7 => {
+        return data7;
+    }).catch(error7 => {
+        console.log(error7);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=São Luís,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp8 => {
+        return resp8.json();
+    }).then(data8 => {
+        return data8;
+    }).catch(error8 => {
+        console.log(error8);
+    }),
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Teresina,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp9 => {
+        return resp9.json();
+    }).then(data9 => {
+        return data9;
+    }).catch(error9 => {
+        console.log(error9);
+    }),
+    
 
 
 ])
 
-// objeto 1 - salvador
-const obj1 = {
-    name: salvador.name,
-    temp: salvador.main.temp.toFixed(0),
-    icon: salvador.weather[0].icon,
-    description: salvador.weather[0].description,
-    speed: salvador.wind.speed,
-    humidity: salvador.main.humidity,
+    
+    // console.log(salvador);
+
+    for(let i = 0; i < maxCards1; i++) {
+        lidandoComDados(salvador, 0);
+        lidandoComDados(maceio, 1);
+        lidandoComDados(aracaju, 2);
+        lidandoComDados(recife, 3);
+        lidandoComDados(joaoPessoa, 4);
+        lidandoComDados(natal, 5);
+        lidandoComDados(fortaleza, 6);
+        lidandoComDados(saoLuis, 7);
+        lidandoComDados(teresina, 8);
+        // console.log(i);
+        
+  
 }
 
-// aplicando elementos no html do card 1:
-cityName[0].textContent = obj1.name;
-temperatura[0].textContent = obj1.temp + "°";
-imgTemperatura[0].setAttribute("src", `https://openweathermap.org/img/wn/${obj1.icon}.png`);
-descricao[0].textContent = obj1.description;
-vento[0].textContent = obj1.speed + "Km/h";
-umidade[0].textContent = obj1.humidity + "%"; 
+requests();
+
+function lidandoComDados(cidade, i){
+    console.log("dentro da função");
+    const objGenerico = {
+        name: cidade.name,
+        temp: cidade.main.temp.toFixed(0),
+        icon: cidade.weather[0].icon,
+        description: cidade.weather[0].description,
+        speed: cidade.wind.speed,
+        humidity: cidade.main.humidity,
+
+    }
+
+    console.log("fora do objeto");
+
+    cityName[i].textContent = objGenerico.name;
+    temperatura[i].textContent = objGenerico.temp + "°";
+    imgTemperatura[i].setAttribute("src", `https://openweathermap.org/img/wn/${objGenerico.icon}.png`);
+    descricao[i].textContent = objGenerico.description;
+    vento[i].textContent = objGenerico.speed + "Km/h";
+    umidade[i].textContent = objGenerico.humidity + "%"; 
+    
+    console.log(`cidade atual ${objGenerico.name}`);
+    
+}
+
+  }
+
+// // objeto 1 - salvador
+// const obj1 = {
+//     name: salvador.name,
+//     temp: salvador.main.temp.toFixed(0),
+//     icon: salvador.weather[0].icon,
+//     description: salvador.weather[0].description,
+//     speed: salvador.wind.speed,
+//     humidity: salvador.main.humidity,
+// }
+
+// // aplicando elementos no html do card 1:
+// cityName[0].textContent = obj1.name;
+// temperatura[0].textContent = obj1.temp + "°";
+// imgTemperatura[0].setAttribute("src", `https://openweathermap.org/img/wn/${obj1.icon}.png`);
+// descricao[0].textContent = obj1.description;
+// vento[0].textContent = obj1.speed + "Km/h";
+// umidade[0].textContent = obj1.humidity + "%"; 
 
 
 // console.log(`Cidade: ${salvador.name}, Temp: ${salvador.main.temp.toFixed(0)}, descrição: ${salvador.weather[0].description}`);
 // console.log(maceio);
 
 // console.log(imgTemperatura);
-
-}
-
-requests();
