@@ -169,14 +169,13 @@ const umidade = document.querySelectorAll(".numUmidade");
 
 
 
-
 // apikey
 const apiKey = "3d4e1c3f7c4dbe48c4d97e970f8d9062";
 
 // function com requests região nordeste:
 async function requests() {
 
-
+// promise.all região nordeste;
 const [salvador, maceio, aracaju, recife, joaoPessoa, natal, fortaleza, saoLuis, teresina] = await Promise.all([
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=salvador,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
         return resp1.json();
@@ -241,14 +240,160 @@ const [salvador, maceio, aracaju, recife, joaoPessoa, natal, fortaleza, saoLuis,
     }).catch(error9 => {
         console.log(error9);
     }),
-    
-
 
 ])
 
-    
-    // console.log(salvador);
+    // promise.all região norte;
+    const [manaus, belem, palmas, macapa, boaVista, rioBranco, portoVelho] = await Promise.all([
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Manaus,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
+            return resp1.json();
+        }).then(data1 => {
+            return data1;
+        }).catch(error1 => {
+            console.log(error1);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Belem,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+            return resp2.json();
+        }).then(data2 => {
+            return data2;
+        }).catch(error2 => {
+            console.log(error2);
+        }),
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Palmas,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp3 => {
+            return resp3.json();
+        }).then(data3 => {
+            return data3;
+        }).catch(error3 => {
+            console.log(error3);
+        }),
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Macapá,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp4 => {
+            return resp4.json();
+        }).then(data4 => {
+            return data4;
+        }).catch(error4 => {
+            console.log(error4);
+        }),
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Boa Vista,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp5 => {
+            return resp5.json();
+        }).then(data5 => {
+            return data5;
+        }).catch(error5 => {
+            console.log(error5);
+        }),
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Rio Branco,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp6 => {
+            return resp6.json();
+        }).then(data6 => {
+            return data6;
+        }).catch(error6=> {
+            console.log(error6);
+        }),
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Porto Velho,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp7 => {
+            return resp7.json();
+        }).then(data7 => {
+            return data7;
+        }).catch(error7 => {
+            console.log(error7);
+        }),
 
+    ])
+
+
+    // promise.all região sudeste;
+    const [rioDeJaneiro, saoPaulo, beloHorizonte, vitoria] = await Promise.all([
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Rio De Janeiro,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
+            return resp1.json();
+        }).then(data1 => {
+            return data1;
+        }).catch(error1 => {
+            console.log(error1);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=São Paulo,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+            return resp2.json();
+        }).then(data2 => {
+            return data2;
+        }).catch(error2 => {
+            console.log(error2);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Belo Horizonte,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp3 => {
+            return resp3.json();
+        }).then(data3 => {
+            return data3;
+        }).catch(error3 => {
+            console.log(error3);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Vitória,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp4 => {
+            return resp4.json();
+        }).then(data4 => {
+            return data4;
+        }).catch(error4 => {
+            console.log(error4);
+        }), 
+        
+    ]);
+
+
+    // promise.all região sul;
+    const [portoAlegre, florianopolis, curitiba] = await Promise.all([
+         fetch(`https://api.openweathermap.org/data/2.5/weather?q=Porto Alegre,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
+            return resp1.json();
+        }).then(data1 => {
+            return data1;
+        }).catch(error1 => {
+            console.log(error1);
+        }), 
+         fetch(`https://api.openweathermap.org/data/2.5/weather?q=Florianópolis,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+            return resp2.json();
+        }).then(data2 => {
+            return data2;
+        }).catch(error2 => {
+            console.log(error2);
+        }), 
+         fetch(`https://api.openweathermap.org/data/2.5/weather?q=Curitiba,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp3 => {
+            return resp3.json();
+        }).then(data3 => {
+            return data3;
+        }).catch(error3 => {
+            console.log(error3);
+        })
+         
+    ])
+
+    // promise.all região centro-oeste;
+
+    const [cuiaba, campoGrande, goiania, brasilia] = await Promise.all([
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cuiabá,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp1 => {
+            return resp1.json();
+        }).then(data1 => {
+            return data1;
+        }).catch(error1 => {
+            console.log(error1);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Campo Grande,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+            return resp2.json();
+        }).then(data2 => {
+            return data2;
+        }).catch(error2 => {
+            console.log(error2);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Goiânia,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp3 => {
+            return resp3.json();
+        }).then(data3 => {
+            return data3;
+        }).catch(error3 => {
+            console.log(error3);
+        }), 
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=Brasília,BR&appid=${apiKey}&units=metric&lang=pt_br`).then(resp2 => {
+            return resp2.json();
+        }).then(data2 => {
+            return data2;
+        }).catch(error2 => {
+            console.log(error2);
+        })
+    ])
+
+
+
+    // cards região nordeste;
     for(let i = 0; i < maxCards1; i++) {
         lidandoComDados(salvador, 0);
         lidandoComDados(maceio, 1);
@@ -260,11 +405,48 @@ const [salvador, maceio, aracaju, recife, joaoPessoa, natal, fortaleza, saoLuis,
         lidandoComDados(saoLuis, 7);
         lidandoComDados(teresina, 8);
         // console.log(i);
-        
-  
 }
+
+    // cards região norte;
+
+    for(let i = 0; i < maxCards2; i++) {
+        lidandoComDados(manaus, 9);
+        lidandoComDados(belem, 10);
+        lidandoComDados(palmas, 11);
+        lidandoComDados(macapa, 12);
+        lidandoComDados(boaVista, 13);
+        lidandoComDados(rioBranco, 14);
+        lidandoComDados(portoVelho, 15);
+    }
+
+    // cards região sudeste
+    for(let i = 0; i < maxCards3; i++) {
+        lidandoComDados(rioDeJaneiro, 16);
+        lidandoComDados(saoPaulo, 17);
+        lidandoComDados(beloHorizonte, 18);
+        lidandoComDados(vitoria, 19);
+    }
+
+    // cards região sul
+    for(let i = 0; i < maxCards4; i++) {
+        lidandoComDados(portoAlegre, 20);
+        lidandoComDados(florianopolis, 21);
+        lidandoComDados(curitiba, 22);
+    }
+
+    // cards região centro-oeste
+    for (let i = 0; i < maxCards5; i++) {
+        lidandoComDados(cuiaba, 23);
+        lidandoComDados(campoGrande, 24);
+        lidandoComDados(goiania, 25);
+        lidandoComDados(brasilia, 26);
+    }
+
 }
+
+
 requests();
+
 
 function lidandoComDados(cidade, i){
     console.log("dentro da função");
