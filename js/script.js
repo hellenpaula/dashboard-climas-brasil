@@ -41,7 +41,7 @@
 // gradiente fundo - cima p/ baixo: #332f62; #3c276a; #261e43;
 
 
-// Continuar fazendo as requisições para cada cidade, serão 5 promise.all;
+// Continuar fazendo as requisições para as cidades cidades, serão 5 promise.all;
 
 // IDEIA:
 // Criar função genérica para colocar objeto e aplicar no html;
@@ -263,7 +263,7 @@ const [salvador, maceio, aracaju, recife, joaoPessoa, natal, fortaleza, saoLuis,
         
   
 }
-
+}
 requests();
 
 function lidandoComDados(cidade, i){
@@ -291,7 +291,7 @@ function lidandoComDados(cidade, i){
     
 }
 
-  }
+  
 
 // // objeto 1 - salvador
 // const obj1 = {
