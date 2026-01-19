@@ -41,7 +41,6 @@
 // gradiente fundo - cima p/ baixo: #332f62; #3c276a; #261e43;
 
 
-// Continuar fazendo as requisições para as cidades cidades, serão 5 promise.all;
 
 // IDEIA:
 // Criar função genérica para colocar objeto e aplicar no html;
@@ -52,6 +51,7 @@
 // Pegar todos os cards(com container q engloba todos), fazer looping p/ acessar cada card(índice) e a card ele chama a função genérica com o parâmetro
 
 
+// Análisar código atual e buscar melhorias para retirar repetições, deixar o código mais clean com estrutura de códigos;
 
 
 
