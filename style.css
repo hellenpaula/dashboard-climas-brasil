@@ -8,11 +8,12 @@
 
 /* HEADER: 
 
+- sombra nos elementos do menu
 - estilizar menu(crescer ao passar mouse);☑️
 - aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento(jquery)
 - aplicar animação de entrada dos elementos quando a página carregar
 - aumentar a altura do espaço que o header ocupa.
-- criar texto para essa área
+- criar texto para essa área, alinhar e separar melhor texto
 - colocar img fundo ☑️
 - escolher fonte título principal ☑️
 - trocar cores fonte ☑️
@@ -126,6 +127,7 @@ body {
 .itemList {
     transition: all 0.3s;
     scale: 1;
+    text-shadow: 1px 1px 10px #4d5f798a;
     
 }
 
@@ -150,11 +152,14 @@ body {
     /* font-family:  "DM Serif Display", serif; */
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
+    text-shadow: 1px 1px 10px #4d5f798a;
 }
 
 .homeArea p {
-    font-size: 14px ;
+    font-size: 15px ;
     line-height: 20px;
+    margin-bottom: 7px;
+    text-shadow: 1px 1px 10px #4d5f798a;
 }
 
 
@@ -380,7 +385,7 @@ body {
     }
     
     .homeArea {
-        max-width: 600px;
+        max-width: 542px;
         padding: 0 1px 80px  70px;
     }
 
@@ -389,7 +394,7 @@ body {
     }
 
     .homeArea p {
-        font-size: 14px ;
+        font-size: 15px ;
     }
 
       .arrow4 {
