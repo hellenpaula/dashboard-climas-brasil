@@ -5,15 +5,15 @@
 /* GERAL: */
 /* MUDAR COR DE FUNDO(PARA UM CINZA AZULADO)
 /* MUDAR COR DOS CARDS(AZUL MAIS CONFORTÁVEL) */
-
+/* CRIAR VARIÁVEIS DE CORES */
 /* HEADER: 
 
-- sombra nos elementos do menu
-- estilizar menu(crescer ao passar mouse);☑️
-- aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento(jquery)
 - aplicar animação de entrada dos elementos quando a página carregar
-- aumentar a altura do espaço que o header ocupa.
-- criar texto para essa área, alinhar e separar melhor texto
+- sombra nos elementos do menu☑️
+- estilizar menu(crescer ao passar mouse);☑️
+- aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento(jquery)☑️
+- aumentar a altura do espaço que o header ocupa.☑️
+- criar texto para essa área, alinhar e separar melhor texto☑️
 - colocar img fundo ☑️
 - escolher fonte título principal ☑️
 - trocar cores fonte ☑️
@@ -26,9 +26,10 @@
 - CRIAR VARIÁVEIS DAS CORES
 - COLOCAR ANIMAÇÃO NOS CARDS AO PASSAR MOUSE(CRESCER, APLICAR SOMBRA)
 - COLOCAR HOVER NAS SETAS
+- ESTILIZAR MELHOR TÍTULOS DE REGIÕES
 
 - FAZER SESSÃO DE INFORMAÇÕES DO CLIMA; BUSCAR IDEIAS
-- APLICAR FUNCIONALIDADE DO CARROSSEL OS CARDS ☑️
+
 
 /* FOOTER: 
 - CRIAR LAYOUT FOOTER
