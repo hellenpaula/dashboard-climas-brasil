@@ -703,6 +703,35 @@ function lidandoComDados(cidade, i){
 
   
 
+// CONFIG SCROLL MENU:
+const menuTag = document.querySelector(".menuTag");
+const itemListMenu = document.querySelectorAll(".linkItemMenu");
+console.log(itemListMenu);
+itemListMenu.forEach(item => {
+    // console.log(item.hash);
+    item.addEventListener("click", (clicado) => {
+        // previne o padrão, necessário para aplicar uma nova config:
+        clicado.preventDefault();
+
+        console.log(clicado);
+        const link = item.getAttribute("href");
+        console.log(link);
+
+        const idItemLinkado = document.querySelector(link);
+        console.log(idItemLinkado);
+
+        if (idItemLinkado) {
+            idItemLinkado.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
+        })
+
+    })
+    
+    
+
+
 // // objeto 1 - salvador
 // const obj1 = {
 //     name: salvador.name,
