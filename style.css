@@ -1,11 +1,17 @@
 
 
 /* FAZER: */
+
+/* GERAL: */
+/* MUDAR COR DE FUNDO(PARA UM CINZA AZULADO)
+/* MUDAR COR DOS CARDS(AZUL MAIS CONFORTÁVEL) */
+
 /* HEADER: 
 
 - estilizar menu(crescer ao passar mouse);☑️
-- aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento
+- aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento(jquery)
 - aplicar animação de entrada dos elementos quando a página carregar
+- aumentar a altura do espaço que o header ocupa.
 - criar texto para essa área
 - colocar img fundo ☑️
 - escolher fonte título principal ☑️
@@ -73,7 +79,12 @@ body {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    height: 390px;
+
+    /* height header com a bandeira no tamanho perfeito, mas mt curto  */
+    /* height: 390px; */
+
+    height: 640px; 
+    gap: 120px;
     background-image: url("img/img bandeira 2.jpg");
     background-size: cover;
     background-position: right;
@@ -95,12 +106,8 @@ body {
 .listTag {
     display: flex;
     justify-content: center;
-    /* list-style: none;
-    gap: 68px;
-    color: white;
-    font-size: 20px;
-    flex-wrap: wrap;
-    padding: 0 5px; */
+    gap: 45px;
+    
 
 }
 
@@ -134,7 +141,7 @@ body {
     text-align: initial;
     color: white;
     max-width: 500px;
-    padding: 0 20px 80px 20px;
+    padding: 0 20px 80px 55px;
 }
 
 .titleHome {
@@ -151,10 +158,12 @@ body {
 
 
 .linhaHoriz {
-    border: 0.1px solid white;
+    /* border: 0.1px solid white;
     margin: -1px 0 11px 0;
-        width: 97%;
-    
+        width: 97%; */
+    border: 0.1px solid white;
+        margin: 10px 0px 15px -25px;
+        width: 60%;
 }
 
 
@@ -329,13 +338,14 @@ body {
     .headerTag {
         align-items: initial;
 
-        height: 420px;
+        height: 695px;
         background-position: center;
+        
 
     }
     
     .homeArea {
-        padding: 0 40px 80px 40px; 
+        padding: 0 40px 80px 70px;
         text-align: initial;
     }
 
@@ -345,10 +355,15 @@ body {
 
     .titleHome {
         font-size: 45px;
+        width: 530px;
     }
 
     .containerCards {
         justify-content: left;
+    }
+
+    .linhaHoriz {
+        width: 74%;
     }
 }
 
@@ -404,6 +419,12 @@ body {
 
         .numVento, .numUmidade {
         margin: 40px 0 0 0;
+    }
+
+    .linhaHoriz {
+        border: 0.1px solid white;
+        margin: 10px 0px 15px -41px;
+        width: 60%;
     }
 }
 
