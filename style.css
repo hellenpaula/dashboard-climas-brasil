@@ -2,19 +2,31 @@
 
 /* FAZER: */
 /* HEADER: 
+
+- estilizar menu(crescer ao passar mouse); 
+- aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página
 - colocar img fundo ☑️
-- estilizar menu(mouse on, cor, transform); ☑️
 - escolher fonte título principal ☑️
 - trocar cores fonte ☑️
 
+
 /* MAIN: 
-- APLICAR FUNCIONALIDADE DO CARROSSEL OS CARDS
+
+- ORGANIZAR TAMANHO E DESIGN DE CARDS(C/ RESPONSIVIDADE)
 - DECIDIR CORES FINAIS
 - CRIAR VARIÁVEIS DAS CORES
-- COLOCAR ANIMAÇÃO NOS CARDS AO PASSAR MOUSE(CRESCER, APP SOMBRA)
+- COLOCAR ANIMAÇÃO NOS CARDS AO PASSAR MOUSE(CRESCER, APLICAR SOMBRA)
+- COLOCAR HOVER NAS SETAS
+
+- FAZER SESSÃO DE INFORMAÇÕES DO CLIMA; BUSCAR IDEIAS
+- APLICAR FUNCIONALIDADE DO CARROSSEL OS CARDS ☑️
 
 /* FOOTER: 
 - CRIAR LAYOUT FOOTER
+- ESCOLHER CORES
+
+/* ALTERAÇÕES: */
+/* - Coloquei tamanho fixo no "containerCards" para não passar dos limites com o flex; tirei position:absolute das arrows para não quebrar; coloquei uma arrow no início de "divArrows" e outra no fim, com a ajuda do tamanho fixo do "containerCards" permite ver elas no antese depois dos cards; 
 
 
 
@@ -22,7 +34,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); */
+
+/* TÍTULO */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 
@@ -35,7 +50,14 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, #332f62, #3c276a, #261e43);
+    /* gradiente */
+    /* background-image: linear-gradient(180deg, #332f62, #3c276a, #261e43); */
+
+    /* cor igual fundo bandeira */
+    
+    background-color: #a8b5c5; 
+
+    /* background-color: #99b7d2; */
 }
 
 /* header */
@@ -95,8 +117,9 @@ body {
 .titleHome {
     /* text-align: left; */
     font-size: 40px;
-    font-family:  "DM Serif Display", serif;
-    font-weight: 500;
+    /* font-family:  "DM Serif Display", serif; */
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
 }
 
 .homeArea p {
@@ -105,8 +128,8 @@ body {
 
 
 .linhaHoriz {
-    border: 0.2px solid white;
-    margin: -5px 0 13px 0;
+    border: 0.1px solid white;
+    margin: -1px 0 11px 0;
         width: 97%;
     
 }
@@ -135,10 +158,11 @@ body {
 .divArrows {
     display: flex;
     align-items: center;
+    margin: 0px -31px;
 }
 
 .fa-solid {
-    position: absolute;
+    /* position: absolute; */
     font-size: 42px;
     color: white;
 
@@ -170,6 +194,7 @@ body {
 
     /* justify-content: center; */
     margin: 0 10px;
+    width: 1420px
 }
 
 .card {
@@ -182,18 +207,37 @@ body {
 }
 
 .purple {
-    background: #4725cf;
+    /* cor roxa  */
+    /* background: #4725cf; */
+
+    /* azul */
+    background: #5170ff;
+    color: white;
+}
+
+.purple .iconUmidity, .iconWind {
     color: white;
 }
 
 .gray {
-    background: rgb(213, 213, 213);
-    color: #4725cf;
+    /* cor cinza */
+    /* background: rgb(213, 213, 213); */
+
+    /* cor branca */
+    background: #d6e4eb;
+
+    /* color: #4725cf; */
+    color: #5170ff;
+}
+
+.gray .iconWind, .iconUmidity {
+    color: #5170ff;
 }
 
 .temperaturaCity {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 90px;
     gap: 5px;
     margin-bottom: 26px;
@@ -258,8 +302,6 @@ body {
 }
 
 
-
-
 @media screen and (min-width: 750px) {
     .headerTag {
         align-items: initial;
@@ -309,5 +351,41 @@ body {
 
     .homeArea p {
         font-size: 14px ;
+    }
+
+      .arrow4 {
+        visibility: hidden ;
+    }
+
+    
+        .windInfo, .umidityInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 5px; */
+    }
+
+        .iconWind, .iconUmidity {
+        /* color: ; */
+        font-size: 28px;
+        /* margin: 0 0 5px 0; */
+    }
+
+        /* .iconWindPurple {
+            color: white;
+        }
+
+        .iconUmidityGray {
+            color: #5170ff;
+        } */
+
+        .numVento, .numUmidade {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .arrow3, .arrow5 {
+        visibility: hidden ;
     }
 }
