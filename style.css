@@ -407,6 +407,7 @@ body {
 
     .titleCityCard {
         padding: 10px 0px 0 0;
+        width: 167px;
 
     }
 
@@ -492,12 +493,7 @@ body {
         /* gap: 5px; */
     }
 
-        .iconWind, .iconUmidity {
-        /* color: ; */
-        /* font-size: 28px; */
-        /* margin: 0 0 5px 0; */
-    }
-
+        
         /* .iconWindPurple {
             color: white;
         }
@@ -506,9 +502,7 @@ body {
             color: #5170ff;
         } */
 
-        .numVento, .numUmidade {
-        /* margin: 40px 0 0 0; */
-    }
+       
 
     .linhaHoriz {
         border: 0.1px solid white;
