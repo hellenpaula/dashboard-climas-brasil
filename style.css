@@ -186,8 +186,8 @@ body {
 }
 
 .titleRegion {
-    color: white;
-    padding: 0 0 30px 0;
+    color: #545e90;
+    padding: 0 0 17px 9px;
 }
 
 
@@ -245,6 +245,15 @@ body {
     align-items: center;
     border-radius: 20px;
     box-shadow: 1px 1px 12px #36323229;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.02;
+    box-shadow: 0px 1px 9px #3632326b;
+
+    
 }
 
 .purple {
@@ -481,9 +490,17 @@ body {
         padding: 38px 0 78px 0;
     }
 
+    .titleRegion{
+        
+        padding: 0 0 17px 36px;
+        font-weight: 500;
+
+    }
+       
       .arrow4 {
         visibility: hidden ;
     }
+
 
     
         .windInfo, .umidityInfo {
