@@ -203,6 +203,7 @@ body {
     /* position: absolute; */
     font-size: 42px;
     color: white;
+    cursor: pointer;
 
 }
 
@@ -224,15 +225,16 @@ body {
     display: flex;
     gap: 50px;
     /* flex-wrap: wrap; */
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 10px 8px;
     overflow-x: scroll;
 
     -ms-overflow-style: none;
     scrollbar-width:none;
 
     /* justify-content: center; */
-    margin: 0 0;
-    width: 1420px
+    margin: 0 0 0 2px;
+    width: 1420px;
+    height: 245px;
 }
 
 .card {
@@ -396,11 +398,58 @@ body {
 
     .containerCards {
         justify-content: left;
+        height: 224px;
     }
+
+    .card {
+        padding: 0px 45px 8px;
+    }
+
+    .titleCityCard {
+        padding: 10px 0px 0 0;
+
+    }
+
+    .temperaturaCity {
+        margin-bottom: 26px;
+        height: 83px;
+        margin-bottom: 5px;
+    }
+
+    .numTemperatura {
+        font-size: 44px;
+    }
+
+    .imgTemperaturaEDescDiv img {
+        width: 94px;
+    }
+
+    .imgTemperaturaEDescDiv p {
+        margin: -23px 0 0 0;
+        font-size: 14px;
+
+    }
+
+    .infosExtrasDiv {
+        gap: 44px;
+        margin: 14px 0 0 0;
+    }
+    .iconUmidity, .iconWind {
+        font-size: 21px; 
+    }
+
+    .numVento, .numUmidade {
+        font-weight: 500;
+        margin: 10px 0 0 0;
+        font-size: 14px;
+    }
+
 
     .linhaHoriz {
         width: 74%;
     }
+
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -445,7 +494,7 @@ body {
 
         .iconWind, .iconUmidity {
         /* color: ; */
-        font-size: 28px;
+        /* font-size: 28px; */
         /* margin: 0 0 5px 0; */
     }
 
@@ -458,7 +507,7 @@ body {
         } */
 
         .numVento, .numUmidade {
-        margin: 40px 0 0 0;
+        /* margin: 40px 0 0 0; */
     }
 
     .linhaHoriz {
