@@ -99,7 +99,7 @@ body {
 .menuTag {
     display: flex;
     justify-content: center;
-    padding: 38px 0 78px 0;
+    padding: 38px 0 0px 0;
    
 }
 
@@ -224,24 +224,25 @@ body {
     display: flex;
     gap: 50px;
     /* flex-wrap: wrap; */
-    padding: 0 0 0 0;
+    padding: 10px 0 10px 10px;
     overflow-x: scroll;
 
     -ms-overflow-style: none;
     scrollbar-width:none;
 
     /* justify-content: center; */
-    margin: 0 10px;
+    margin: 0 0;
     width: 1420px
 }
 
 .card {
     background-color: white;
-    padding: 10px 50px;
+    padding: 0px 53px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 1px 1px 12px #36323229;
 }
 
 .purple {
@@ -251,6 +252,14 @@ body {
     /* azul */
     background: #5170ff;
     color: white;
+}
+
+.titleCityCard {
+    text-align: center;
+    font-size: 24px;
+    padding: 12px 0px 0 0;
+    font-weight: 500;
+    width: 164px;
 }
 
 .purple .iconUmidity, .iconWind {
@@ -275,20 +284,20 @@ body {
 .temperaturaCity {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 90px;
-    gap: 5px;
-    margin-bottom: 26px;
+    gap: 12px;
+    margin-bottom: 30px;
     width: 152px
 
 }
 
 .numTemperatura {
-    font-size: 30px;
+    font-size: 45px;
+    margin: 19px 0 0 0;
 }
 
 .imgTemperaturaEDescDiv img {
-    width: 85px;
+    width: 107px;
     /* : #3c276a; */
     
 
@@ -296,12 +305,29 @@ body {
 
 .imgTemperaturaEDescDiv p {
     margin: -20px 0 0 0;
+    text-align: center;
+    font-weight: 300;
 }
 
 .infosExtrasDiv {
     display: flex;
     gap: 30px;
 }
+
+.windInfo, .umidityInfo {
+    text-align: center;
+}
+
+.iconUmidity, .iconWind {
+    font-size: 29px;
+}
+
+.numVento, .numUmidade {
+    font-weight: 500;
+    margin: 12px 0 0 0;
+}
+
+
 
 
 /* footer: */
@@ -349,6 +375,10 @@ body {
         
 
     }
+
+    .menuTag {
+        padding: 38px 0 78px 0;
+    }
     
     .homeArea {
         padding: 0 40px 80px 70px;
@@ -395,6 +425,10 @@ body {
 
     .homeArea p {
         font-size: 15px ;
+    }
+
+    .menuTag {
+        padding: 38px 0 78px 0;
     }
 
       .arrow4 {
