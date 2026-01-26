@@ -485,6 +485,13 @@ body {
     .tituloAreaClima {
         padding: 0 0 60px;
         text-align: center;
+        
+    }
+
+    .subtituloSectionClima {
+        color: #465b68;
+    }
+    .tituloSectionClima {
         color: #7595c1;
     }
 
