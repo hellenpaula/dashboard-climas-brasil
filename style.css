@@ -479,6 +479,12 @@ body {
         display: flex;
         justify-content: center;
         margin: 0 27px;
+        flex-direction: column;
+    }
+
+    .tituloAreaClima {
+        padding: 0 0 60px;
+        text-align: center;
     }
 
     .containerAreaClima {
