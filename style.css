@@ -540,76 +540,120 @@ body {
         width: 60%;
     }
 
-    .containerAreaClima{
-    display: flex;
-    justify-content: center;
-    gap: 238px;
-    padding: 70px;
-}
+    .info {
+        display: flex;
+        justify-content: center;
+    }
 
-.equatorial {
-    background-color: #7595c1;
+    .containerAreaClima {
+        /* width: 50%; */
+        display: grid;
+        grid-template-columns: 0fr 0fr;
+        gap: 15px;
+        grid-template-areas: "clima1 clima2"
+                             "clima1 clima3"
+                             "clima4 clima6"
+                             "clima5 clima6" ;
+
+    }
+
+    .climaBr {
+        
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .divImgClima {
+        width: 216px;
+        height: 258px;
+        margin: -41px 0 0 0;
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+
+    .imgClima {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tropical .divImgClima, .semiarido .divImgClima, .altitude .divImgClima, .litoraneo .divImgClima{
+        height: 193px;
+        width: 260px;
+    }
+
+    .divTextoClima {
+        text-align: center;
+        width: 300px;
+        color: #f6f6f6;
+    }
+
+    .tituloClimaBr {
+        font-size: 22px;
+        padding: 25px 0 11px;
+    }
+
+    .descricaoClima {
+        line-height: 17px;
+        font-size: 13px;
+        margin: 0 0 7px 0;
+    }
     
+    .equatorial, .subtropical {
+        flex-direction: column;
+        /* background-color: #0000ff73; */
+        width: 344px;
+        padding: 18px 5px 74px 5px;
+        
+    }
+
+    .tropical, .semiarido, .altitude, .litoraneo {
+        flex-direction: row;
+        
+        width: 459px;
+        padding: 18px 17px 2px 16px;
+        height: 280px;
+    }
+
+    .equatorial {
+        background-color: #0000ff73; 
+        grid-area: clima1;
+    }
+
+    .tropical {
+        grid-area: clima2;
+        background-color: #b9d08f;
+        margin: 0 0 0 -112px;
+    }
+
+    .semiarido {
+        grid-area: clima3;
+        background-color: #d0b372;
+        margin: 0 0 0 -112px;
+    }
+
+    .altitude {
+        background-color: #94963e;
+        grid-area: clima4;
+        margin: 20px 0 0 0;
+    }
+
+    .litoraneo {
+        background-color: #cad0d7;
+        grid-area: clima5;
+    }
+
+    .subtropical {
+        background-color: #a9aeae;
+        grid-area: clima6;
+        margin: 20px 0 0 0;
+    }
+
+
+
     
-}
-
-.tropical {
-    background-color: #b9d08f;
-}
-
-.tropLitoraneo {
-    background-color: #a8b7c7;
-}
-
-.tropAltitude {
-    background-color: #353c1d;
-}
-
-.tropSemiarido {
-    background-color: #d0b372;
-}
-
-.subtropical {
-    background-color: #a9aeae;
-}
-
-.divImgAreaClima {
-    border-radius: 11px;
-    width: 327px;
-    height: 408px;
-    /* margin: -6px 0; */
-    background-size: contain;
-    overflow: hidden;
-    box-shadow: 3px 1px 18px #00000059;
-}
-
-.imgAreaClima {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
-.textoAreaClima {
-    width: 417px;
-    color: #ffffffed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.tituloAreaClima {
-    font-weight: 600;
-    color: #ffffffed;
-    padding: 5px 0 18px;
-}
-
-.descricaoAreaClima {
-    line-height: 22px;
-    padding: 5px 0;
-}
-
-
 }
 
 @media screen and (min-width: 1270px) {
