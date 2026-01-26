@@ -473,6 +473,122 @@ body {
     }
 
 
+    
+    .info {
+        display: flex;
+        justify-content: center;
+        margin: 0 27px;
+    }
+
+    .containerAreaClima {
+        /* width: 50%; */
+        display: grid;
+        grid-template-columns: 0fr 0fr;
+        gap: 20px;
+        grid-template-areas: "clima1 clima2"
+                             "clima1 clima3"
+                             "clima4 clima6"
+                             "clima5 clima6" ;
+
+    }
+
+    .climaBr {
+        
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .divImgClima {
+        width: 216px;
+        height: 258px;
+        margin: -41px 0 0 0;
+        border-radius: 10px;
+        overflow: hidden;
+
+    }
+
+
+    .imgClima {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tropical .divImgClima, .semiarido .divImgClima, .altitude .divImgClima, .litoraneo .divImgClima{
+        height: 193px;
+        width: 260px;
+    }
+
+    .divTextoClima {
+        text-align: center;
+        width: 300px;
+        color: #f6f6f6;
+    }
+
+    .tituloClimaBr {
+        font-size: 22px;
+        padding: 25px 0 11px;
+    }
+
+    .descricaoClima {
+        line-height: 17px;
+        font-size: 13px;
+        margin: 0 0 7px 0;
+    }
+    
+    .equatorial, .subtropical {
+        flex-direction: column;
+        /* background-color: #0000ff73; */
+        width: 300px;
+        padding: 18px 5px 74px 5px;
+        
+    }
+
+    .tropical, .semiarido, .altitude, .litoraneo {
+        flex-direction: row;
+        
+        width: 400px;
+        padding: 18px 17px 2px 16px;
+        height: 280px;
+    }
+
+    .equatorial {
+        background-color: #0000ff73; 
+        grid-area: clima1;
+    }
+
+    .tropical {
+        grid-area: clima2;
+        background-color: #b9d08f;
+        margin: 0 0 0 -102px;
+    }
+
+    .semiarido {
+        grid-area: clima3;
+        background-color: #d0b372;
+        margin: 0 0 0 -102px;
+    }
+
+    .altitude {
+        background-color: #94963e;
+        grid-area: clima4;
+        margin: 20px 0 0 0;
+    }
+
+    .litoraneo {
+        background-color: #cad0d7;
+        grid-area: clima5;
+    }
+
+    .subtropical {
+        background-color: #a9aeae;
+        grid-area: clima6;
+        margin: 20px 0 0 0;
+    }
+
+
+
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -539,6 +655,7 @@ body {
         margin: 10px 0px 15px -41px;
         width: 60%;
     }
+
 
     .info {
         display: flex;
@@ -653,7 +770,7 @@ body {
 
 
 
-    
+
 }
 
 @media screen and (min-width: 1270px) {
