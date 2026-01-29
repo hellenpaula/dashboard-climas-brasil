@@ -11,6 +11,7 @@
 
 - aplicar animação de entrada dos elementos quando a página carregar
 - Alinhar melhor texto do header
+- colocar sombra na div do header e no footer, para trazer profundidade 
 - sombra nos elementos do menu☑️
 - estilizar menu(crescer ao passar mouse);☑️
 - aplicar funcionalidade ao clicar nos elementos do menu, para levar até a sessão da página, deixar scroll mais lento(jquery)☑️
@@ -38,8 +39,9 @@
 - BUSCAR IMAGENS ☑️
 - SEPARAR RESUMOS P/ CADA CLIMA ☑️
 - COLOCAR SOMBRA NOS CLIMAS ☑️
-- DESTACAR ESTADOS NO TEXTO DOS CLIMAS
-- APLICAR NOMES DE REGIÕES NAS IMAGENS DOS CLIMAS(IGUAL AO ESCOPO NO CANVA)
+- DESTACAR ESTADOS NO TEXTO DOS CLIMAS(cores)
+- COLOCAR SOMBRAS NOS TEXTOS E TÍTULOS DOS CARDS DOS CLIMAS
+- APLICAR NOMES DE REGIÕES NAS IMAGENS DOS CLIMAS(IGUAL AO ESCOPO NO CANVA) ☑️
 - MELHORAR TÍTULO E SUBTÍTULO INTRODUTÓRIOS HARMÔNICOS
 - ESCOLHER CORES(PÁGINA, CARDS, TEXTOS, TÍTULOS)
 
@@ -166,7 +168,7 @@ body {
     text-align: initial;
     color: white;
     max-width: 500px;
-    padding: 0 20px 80px 55px;
+    padding: 0 38px 80px 55px;
 }
 
 .titleHome {
