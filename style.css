@@ -476,22 +476,28 @@ body {
         color: #ffffff;
         font-size: 14px;
         padding: 0 5px;
+        text-shadow: 1px 1px 9px #120202;
     }
 
-    .legendaClima1, .legendaClima5, .legendaClima6 {
-        top: 226px;
+    .legendaClima1, .legendaClima6 {
+        top: 223px;
         left: 15px;
     }
 
     .legendaClima2 {
-        top: 196px;
+        top: 191px;
         left: 15px;
 
     }
 
-    .legendaClima3, .legendaClima4 {
+    .legendaClima3, .legendaClima4, .legendaClima5 {
         top: 209px;
         left: 15px;
+    }
+
+    .iconLocationImg {
+        font-size: 16px;
+        color: #e31b1bed;
     }
 /* 
     .legendaClima4 {
@@ -702,7 +708,7 @@ body {
     }
 
     .legendaClima3, .legendaClima4, .legendaClima5 {
-        top: 130px;
+        top: 127px;
        
     }
 /* 
@@ -1157,7 +1163,7 @@ body {
     }
 
     .legendaClima5 {
-        top: 173px;
+        top: 158px;
     }
 
 
