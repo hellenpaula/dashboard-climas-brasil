@@ -456,6 +456,7 @@ body {
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 1px 1px 10px #00000036;
+        position: relative;
 
     }
 
@@ -468,6 +469,14 @@ body {
     .tropical .divImgClima, .semiarido .divImgClima, .altitude .divImgClima, .litoraneo .divImgClima{
         /* height: 193px; */
         /* width: 260px; */
+    }
+
+    .legendaImagemClimas {
+        position: absolute;    
+        top: 229px;
+        color: #ffffff;
+        left: 15px;
+        font-size: 14px;
     }
 
     .divTextoClima {
@@ -486,7 +495,12 @@ body {
     .descricaoClima {
         line-height: 17px;
         font-size: 14px;
-        margin: 0 0 7px 0;
+        margin: 0 0 9px 0;
+    }
+
+    .estadosDescricaoClima {
+        font-weight: 700;
+        font-size: 14px;
     }
     
     .equatorial, .subtropical, .tropical, .semiarido, .altitude, .litoraneo {
@@ -657,13 +671,14 @@ body {
     .equatorial .descricaoClima, .subtropical .descricaoClima {
         line-height: 17px;
         font-size: 13px;
-        margin: 0 0 7px 0;
+        margin: 0 0 9px 0;
     }
 
-    .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima {
+    .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima, .estadosDescricaoClima {
         font-size: 12px;
     }
     
+
     .equatorial, .subtropical {
         flex-direction: column;
         /* background-color: #0000ff73; */
@@ -882,7 +897,11 @@ body {
     .descricaoClima {
         line-height: 17px;
         font-size: 13px;
-        margin: 0 0 7px 0;
+        margin: 0 0 9px 0;
+    }
+
+    .estadosDescricaoClima {
+        font-size: 13px;
     }
     
     .equatorial, .subtropical {
@@ -1070,14 +1089,14 @@ body {
     .descricaoClima {
         line-height: 17px;
         font-size: 13px;
-        margin: 0 0 7px 0;
+        margin: 0 0 9px 0;
     }
 
     .equatorial .descricaoClima, .subtropical .descricaoClima { 
         font-size: 14px;
     }
     
-    .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima {
+    .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima, .estadosDescricaoClima {
         font-size: 13px;
     }
 
