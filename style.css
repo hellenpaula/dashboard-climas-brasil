@@ -116,7 +116,10 @@ body {
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    
+
+    /* mudança no design do header */
+    margin: 85px 46px;
+    border-radius: 18px;
 
 }
 
@@ -124,7 +127,11 @@ body {
 .menuTag {
     display: flex;
     justify-content: center;
-    padding: 38px 0 0px 0;
+    /* padding: 38px 0 0px 0; */
+
+    /* mudança no menu do header */
+    padding: 38px 0 192px 0;
+    margin: -86px 0;
    
 }
 
@@ -144,7 +151,7 @@ body {
     list-style: none;
     text-decoration: none;
     gap: 68px;
-    color: white;
+    color: #8788d0d6;
     font-size: 20px;
     flex-wrap: wrap;
     padding: 0 5px;
@@ -153,8 +160,10 @@ body {
 .itemList {
     transition: all 0.3s;
     scale: 1;
-    text-shadow: 1px 1px 10px #4d5f798a;
-    
+    box-shadow: 1px 1px 13px #6a727f12;    
+    border: 1px solid #00000017;
+    border-radius: 17px;
+    padding: 6px 11px;
 }
 
 .itemList:hover {
@@ -237,6 +246,9 @@ body {
 .containerMain {
     padding: 50px 40px;
     position: relative;
+    background: #ffffffab;
+    margin: 0px 46px 35px;
+    border-radius: 10px;
 }
 
 .titleRegion {
@@ -408,10 +420,14 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 206px 0 0;
+        /* margin: 206px 0 0; */
         padding: 0 0 140px;
         flex-direction: column;
         background: #AFD06E;
+        
+        /* alteração no design do background */
+        /* margin: 206px 51px 58px; */
+        /* border-radius: 10px; */
     }
 
     .tituloAreaClima {
@@ -426,7 +442,8 @@ body {
     }
     .tituloSectionClima {
         /* color: #437118; */
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 28px;
     }
 
     .containerAreaClima {
@@ -836,9 +853,15 @@ body {
     .menuTag {
         padding: 38px 0 78px 0;
     }
+
+    .itemList {
+        /* border: 1px solid #00000017;
+        border-radius: 17px;
+        padding: 6px 11px; */
+    }
     
     .homeArea {
-        padding: 0 40px 80px 70px;
+        padding: 150px 40px 80px 70px;
         text-align: initial;
     }
 
@@ -849,6 +872,12 @@ body {
     .titleHome {
         font-size: 45px;
         width: 530px;
+    }
+
+    .containerMain {
+        background: #ffffffab;
+        margin: 0px 53px 35px;
+        border-radius: 10px;
     }
 
     .containerCards {
@@ -910,9 +939,13 @@ body {
     .info {
         display: flex;
         justify-content: center;
-        margin: 270px 0 0;
+        /* margin: 270px 0 0; */
         padding: 0 0 140px;
         flex-direction: column;
+
+        /* design do background climas */
+        margin: 270px 54px 114px;
+        border-radius: 10px;
     }
 
     .tituloAreaClima {
@@ -1070,6 +1103,15 @@ body {
 
 }
 
+
+
+@media screen and (max-width: 890px) {
+    .info {
+        margin: 270px 0 0;
+    }
+}
+
+
 @media screen and (min-width: 1000px) {
 
     .headerTag {
@@ -1083,7 +1125,7 @@ body {
     
     .homeArea {
         max-width: 542px;
-        padding: 0 1px 80px  70px;
+        padding: 150px 1px 80px  70px;
     }
 
     .titleHome {
@@ -1141,6 +1183,10 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0 0 140px;
+
+        /* design background */
+        margin: 270px 54px 114px;
+        border-radius: 10px;
     }
 
     .containerAreaClima {
