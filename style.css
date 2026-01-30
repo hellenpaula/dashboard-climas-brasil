@@ -426,8 +426,8 @@ body {
         background: #AFD06E;
         
         /* alteração no design do background */
-        /* margin: 206px 51px 58px; */
-        /* border-radius: 10px; */
+        margin: 206px 19px 58px;
+        border-radius: 10px;
     }
 
     .tituloAreaClima {
@@ -1107,7 +1107,7 @@ body {
 
 @media screen and (max-width: 890px) {
     .info {
-        margin: 270px 0 0;
+        margin: 270px 19px 0;
     }
 }
 
