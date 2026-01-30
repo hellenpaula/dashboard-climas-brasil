@@ -118,7 +118,7 @@ body {
     background-repeat: no-repeat;
 
     /* mudança no design do header */
-    margin: 85px 46px;
+    margin: 118px 19px;
     border-radius: 18px;
 
 }
@@ -130,8 +130,8 @@ body {
     /* padding: 38px 0 0px 0; */
 
     /* mudança no menu do header */
-    padding: 38px 0 192px 0;
-    margin: -86px 0;
+    padding: 20px 0 123px 0;
+    margin: -85px 0;
    
 }
 
@@ -140,7 +140,7 @@ body {
 .listTag {
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: 29px;
     
 
 }
@@ -178,7 +178,7 @@ body {
     text-align: initial;
     color: white;
     max-width: 500px;
-    padding: 0 38px 80px 55px;
+    padding: 0 0px 80px 14px;
 }
 
 .titleHome {
@@ -202,7 +202,7 @@ body {
     margin: -1px 0 11px 0;
         width: 97%; */
     border: 0.1px solid white;
-        margin: 10px 0px 15px -25px;
+        margin: 10px 0px 15px -13px;
         width: 60%;
 }
 
@@ -846,7 +846,7 @@ body {
 
         height: 695px;
         background-position: center;
-        
+        margin: 85px 46px;
 
     }
 
