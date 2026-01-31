@@ -247,10 +247,10 @@ body {
 }
 
 .containerMain {
-    padding: 50px 17px 50px 27px;
+    padding: 50px 17px 30px 27px;
     position: relative;
-    background: #ffffffab;
-    margin: 0px 19px 35px;
+    /* background: #ffffffab; */
+    margin: 0px 19px 0px;
     border-radius: 10px;
 }
 
@@ -281,7 +281,7 @@ body {
     bottom:0;
     left:0;
     right: auto; */
-    left: 0px;
+    left: 10px;
     right: auto;
 }
 
@@ -292,7 +292,7 @@ body {
 
 .containerCards {
     display: flex;
-    gap: 50px;
+    gap: 24px;
     /* flex-wrap: wrap; */
     padding: 10px 0 10px 8px;
     overflow-x: scroll;
@@ -312,7 +312,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 33px;
     box-shadow: 1px 1px 12px #36323229;
     transition: all 0.4s;
     cursor: pointer;
@@ -367,7 +367,7 @@ body {
 }
 
 .gray .iconWind, .iconUmidity {
-    color: #5170ff;
+    color: #1D2A62;
 }
 
 .temperaturaCity {
@@ -434,7 +434,7 @@ body {
     }
 
     .tituloAreaClima {
-        padding: 0 0 100px;
+        padding: 0 0 94px;
         
         text-align: center;
         
@@ -879,8 +879,8 @@ body {
     }
 
     .containerMain {
-        background: #ffffffab;
-        margin: 0px 53px 35px;
+        /* background: #ffffffab; */
+        margin: 0px 182px 0px;
         border-radius: 10px;
     }
 
@@ -953,7 +953,7 @@ body {
     }
 
     .tituloAreaClima {
-        padding: 0 0 178px;
+        padding: 0 0 67px;
         text-align: center;
         
     }
