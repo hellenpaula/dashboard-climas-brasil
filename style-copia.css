@@ -303,12 +303,12 @@ body {
     /* justify-content: center; */
     margin: 0 0 0 2px;
     width: 1412px;
-    height: 228px;
+    height: 197px;
 }
 
 .card {
     background-color: white;
-    padding: 0px 45px 8px;
+    padding: 0px 35px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1437,17 +1437,17 @@ body {
 
     .containerMain {
         /* background: #ffffffab; */
-        margin: 0px 95px 0px;
+        margin: 0px 61px 0px;
         border-radius: 10px;
     }
 
     .containerCards {
         justify-content: left;
-        height: 217px;
+        height: 194px;
     }
 
     .card {
-        padding: 0px 41px 0;
+        padding: 0px 36px 0;
     }
 
     .titleCityCard {
