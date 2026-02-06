@@ -294,7 +294,6 @@ const array2 = [manaus, belem, palmas, macapa, boaVista, rioBranco, portoVelho] 
     promiseAll("Rio de Janeiro"),
     promiseAll("São Paulo"),
     promiseAll("Belo Horizonte"),
-    promiseAll("Belo Horizonte"),
     promiseAll("Vitória"),
     
 ])
@@ -728,10 +727,165 @@ itemListMenu.forEach(item => {
         })
 
     })
+
+    
+    // config nos textos dos cards
+
+    // lógica: ao clicar na seta, o elemento clicado(saber qual elemento foi clicado) retorna o card com a imagem mais escura, titulo do clima, descrição mais explicativa, um icone para fechar;
+    // - ao apertar para fechar, o card volta ao padrão normal;
+    // - FAZER:
+    // - saber qual elemento está sendo clicado para modificar apenas o que está sendo clicado
+    // - colocar crescimento e a mudança no conteúdo do card mais mais devagar(slow);
+
+
+  
+    
+    // const textoSecundarioImagem = document.querySelector(".texto-secundario-imagem-clima");
+
+    // const imagemClima = document.querySelectorAll(".imgClima");
+
+   
+    
+     const iconeSeta = document.querySelectorAll(".div-icone-seta");
+
+    console.log(iconeSeta);
+        
+    // click no icone de seta
+        iconeSeta.forEach(icon => {
+            console.log(icon);
+            icon.addEventListener("click", (elemento) => {
+            
+                console.log(icon);
+                // const elementoClicado = elemento.target;
+                // console.log(elementoClicado);
+
+                icon.style.visibility = "hidden";
+
+                // pega o pai do elemento que foi clicado:
+                const paiElementoClicadoSeta = icon.parentElement;
+                console.log(paiElementoClicadoSeta);
+
+                // pega a imagem no html, dentro do pai do elemento clicado
+                const imagemClima = paiElementoClicadoSeta.querySelector(".imgClima");
+                // add classe com configs específicas para o card clicado;
+                 imagemClima.classList.add("imgClimaSecundario");
+
+
+                //  pega texto padrão no html, dentro do pai do elemento clicado:
+                const textoPadraoImagem = paiElementoClicadoSeta.querySelector(".texto-padrao-imagem-clima");
+
+                // texto padrão recebe a visibilidade = hidden
+                // textoPadraoImagem.style.visibility = "hidden";
+                textoPadraoImagem.classList.add("hiddeTextoP");
+
+
+
+                // pega texto secundario no html, dentro do pai do elemento clicado:
+                const textoSecundarioImagem = paiElementoClicadoSeta.querySelector(".texto-secundario-imagem-clima");
+
+                // texto secundario recebe a visibilidade = visible
+                // textoSecundarioImagem.style.visibility = "visible";
+                textoSecundarioImagem.classList.add("activeTextoS");
+
+                // pega o icone fechar no html, dentro do pai do elemento clicado:
+                const iconeFechar = paiElementoClicadoSeta.querySelector(".div-icone-fechar");
+
+                // aplico a visibilidade = visible nele, mudando o que foi colocado inicialmente na sua classe(hidden):
+                iconeFechar.style.visibility = "visible";
+            })
+
+
+
+
+                // const elementoClassName = elementoClicado.className;
+
+                // console.log(elementoClassName);
+
+                // const elementoClicadoHtml = document.querySelector(elementoClassName);
+                // console.log(elementoClassName.parentElement());
+
+                // console.log();e
+
+            
+
+            
+
+            // imagemClima.forEach(img => {
+            //     img.classList.add("imgClimaSecundario");
+            // }) 
+
+        
+        
+        })
+        
     
     
 
+        // click no icone fechar
 
+
+        const iconeFechar = document.querySelectorAll(".div-icone-fechar"); 
+        console.log(iconeFechar);
+        //  const iconeFechar = paiElementoClicado.querySelector(".div-icone-fechar");
+        
+        iconeFechar.forEach(iconF => {
+
+            iconF.addEventListener("click", () => {
+
+                console.log(iconF);
+
+                // pega o pai do elemento clicado
+                const paiElementoClicadoFechar = iconF.parentElement;
+                console.log(paiElementoClicadoFechar);
+
+                // pega a imagem no html, dentro do pai do elemento clicado:
+                const imagemClima = paiElementoClicadoFechar.querySelector(".imgClima");
+
+                // na imagem, remove a classe que colocava uma config específica para o click na seta:
+                imagemClima.classList.remove("imgClimaSecundario");
+
+
+                const textoPadraoImagem = paiElementoClicadoFechar.querySelector(".texto-padrao-imagem-clima");
+
+                // textoPadraoImagem.style.visibility = "visible";
+                textoPadraoImagem.classList.remove("hiddeTextoP");
+
+                // pega o texto secundario no html, dentro do pai do elemento clicado:
+                const textoSecundarioImagem = paiElementoClicadoFechar.querySelector(".texto-secundario-imagem-clima");
+
+                //  remove o texto secundario com o visibility = hidden:
+                // textoSecundarioImagem.style.visibility = "hidden";
+                textoSecundarioImagem.classList.remove("activeTextoS");
+
+
+               
+
+                iconF.style.visibility = "hidden";
+
+                iconeSeta.forEach(iconS => {
+                    iconS.style.visibility = "visible";
+                })
+
+
+
+            // textoSecundarioImagem.style.visibility = "hidden";
+
+            // textoPadraoImagem.forEach(function(texto, index) {
+            //     texto.style.visibility = "visible";
+            // })
+            
+
+            // imagemClima.forEach(img => {
+            //     img.classList.remove("imgClimaSecundario");
+            // })
+
+            // iconeFechar.style.visibility = "hidden";
+            })
+
+
+        })
+    // })
+    
 // // objeto 1 - salvador
 // const obj1 = {
 //     name: salvador.name,
