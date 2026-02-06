@@ -504,7 +504,7 @@ body {
     .imgClima {
         width: 100%;
         height: 100%;
-        filter: brightness(0.82);
+        filter: brightness(0.80);
         border-radius: 31px;
     }
 
@@ -610,27 +610,27 @@ body {
     }
 
      .texto-padrao-imagem-clima2 {
-        top: 179px;
+        top: 201px;
         left: 25px;
     }
 
      .texto-padrao-imagem-clima3{
-        top: 193px;
+        top: 201px;
         left: 25px;
     }
 
      .texto-padrao-imagem-clima4 {
-         top: 191px;
+         top: 212px;
         left: 25px;
      }
 
      .texto-padrao-imagem-clima5 {
-        top: 154px;
+        top: 212px;
         left: 25px;
     }
 
       .texto-padrao-imagem-clima6 {
-        top: 207px;
+        top: 212px;
         left: 25px;
     }
 
@@ -652,7 +652,7 @@ body {
     }
 
     .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3, .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
-        top: 50px;
+        top: 103px;
         left: 25px;
     }
 
@@ -793,7 +793,7 @@ body {
 
     .legendaImagemClimas {
         position: absolute;    
-        color: #ffffff;
+        color: #ffffffc7;
         /* font-size: 14px; */
         /* padding: 0 5px; */
         text-shadow: 1px 1px 9px #120202;
@@ -860,7 +860,7 @@ body {
 
     .descricaoClima {
         line-height: 17px;
-        font-size: 14px;
+        font-size: 15px;
         width: 222px;
         margin: 0 0 2px 0;
         text-shadow: 1px 3px 5px #000000;
@@ -868,7 +868,7 @@ body {
 
     .equatorial .descricaoClima, .subtropical .descricaoClima {
         line-height: 17px;
-        font-size: 14px;
+        font-size: 15px;
         margin: 0 0 2px 0;
     }
 
@@ -1185,33 +1185,33 @@ body {
     }
 
     .texto-padrao-imagem-clima1 {
-        top: 274px;
+        top: 269px;
         left: 25px;
     }
 
      .texto-padrao-imagem-clima2 {
-        top: 44px;
+        top: 34px;
         left: 25px;
     }
 
      .texto-padrao-imagem-clima3{
-        top: 39px;
+        top: 46px;
         left: 25px;
     }
 
      .texto-padrao-imagem-clima4 {
-         top: 50px;
+         top: 46px;
         left: 25px;
      }
 
      .texto-padrao-imagem-clima5 {
-        top: 16px;
+        top: 46px;
         left: 25px;
     }
 
       .texto-padrao-imagem-clima6 {
-        top: 260px;
-        left: 21px;
+        top: 257px;
+        left: 25px;
     }
 
 
@@ -1231,7 +1231,13 @@ body {
         left: 25px;
     }
 
-    .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3, .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
+
+    .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3 {
+        top: -15px;
+        left: 21px;
+    }
+
+     .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
         top: -8px;
         left: 21px;
     }
@@ -1298,7 +1304,7 @@ body {
     }
 
     .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima, .estadosDescricaoClima {
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .descricaoClima {
@@ -1652,7 +1658,12 @@ body {
         left: 25px;
     }
 
-    .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3, .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
+    .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3 {
+        top: -15px;
+        left: 25px;
+    }
+
+     .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
         top: -8px;
         left: 21px;
     }
@@ -1673,32 +1684,32 @@ body {
     }
 
     .texto-padrao-imagem-clima1 {
-        top: 273px;
+        top: 270px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima6 {
-        top: 259px;
+        top: 253px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima2 {
-        top: 43px;
+        top: 34px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima3 {
-        top: 37px;
+        top: 44px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima4 {
-        top: 39px;
+        top: 44px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima5 {
-        top: 14px;
+        top: 44px;
         left: 25px;
     }
 
@@ -1767,14 +1778,14 @@ body {
     }
 
     .equatorial  .descricaoClima, .subtropical .descricaoClima {
-        font-size: 14px;
+        font-size: 13px;
         margin: 0 0 2px 0;
         width: 201px;
  
    }
 
    .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima, .estadosDescricaoClima {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .estadosDescricaoClima {
@@ -2076,35 +2087,35 @@ body {
     }
 
     .texto-padrao-imagem-clima1 {
-        top: 281px;
+        top: 275px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima2 {
-        top: 14px;
+        top: 34px;
         left: 25px;
     }
 
     .texto-padrao-imagem-clima3 {
-        top: 18px;
+        top: 24px;
         left: 25px;
         margin: 11px 0 0;
     }
 
     .texto-padrao-imagem-clima4 {
-        top: 45px;
+        top: 39px;
         left: 25px;
         margin: 11px 0 0;
     }
 
     .texto-padrao-imagem-clima5 {
-        top: 27px;
+        top: 55px;
         left: 25px;
         margin: -7px 0 0;
     }
 
     .texto-padrao-imagem-clima6 {
-        top: 264px;
+        top: 260px;
         left: 25px;
     }
 
@@ -2150,15 +2161,20 @@ body {
         transition: opacity 0.4s ease, transform 1.4s ease, max-height 0.4s ease;
     }
 
-    .texto-secundario-imagem-clima1, .texto-secundario-imagem-clima6 {
-        top: 110px;
+    .texto-secundario-imagem-clima1 {
+        top: 100px;
         left: 25px;
     }
 
     .texto-secundario-imagem-clima2, .texto-secundario-imagem-clima3, .texto-secundario-imagem-clima4, .texto-secundario-imagem-clima5 {
-        top: -8px;
+        top: -12px;
         left: 21px;
     }
+
+     .texto-secundario-imagem-clima6 {
+        top: 82px;
+        left: 25px;
+     }
 
     .activeTextoS {
         opacity: 1;
@@ -2206,7 +2222,7 @@ body {
     }
     
     .tropical .descricaoClima, .semiarido .descricaoClima, .altitude .descricaoClima, .litoraneo .descricaoClima, .estadosDescricaoClima {
-        font-size: 13px;
+        font-size: 14px;
     }
 
 
