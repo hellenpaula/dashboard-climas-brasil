@@ -247,7 +247,7 @@ body {
 }
 
 .containerMain {
-    padding: 50px 17px 30px 27px;
+    padding: 50px 17px 90px 27px;
     position: relative;
     /* background: #ffffffab; */
     margin: 0px 19px 0px;
@@ -303,12 +303,12 @@ body {
     /* justify-content: center; */
     margin: 0 0 0 2px;
     width: 1412px;
-    height: 197px;
+    height: 194px;
 }
 
 .card {
     background-color: white;
-    padding: 0px 35px 8px;
+    padding: 0px 34px 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,8 +339,8 @@ body {
 
 .titleCityCard {
     text-align: center;
-    font-size: 24px;
-    padding: 12px 0px 0 0;
+    font-size: 22px;
+    padding: 6px 0px 0 0;
     font-weight: 500;
     width: 167px;
 }
@@ -373,20 +373,20 @@ body {
 .temperaturaCity {
     display: flex;
     align-items: center;
-    height: 90px;
+    height: 83px;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     width: 152px
 
 }
 
 .numTemperatura {
-    font-size: 44px;
+    font-size: 34px;
     margin: 19px 0 0 0;
 }
 
 .imgTemperaturaEDescDiv img {
-    width: 98px;
+    width: 72px;
 
     
 
@@ -396,6 +396,7 @@ body {
     margin: -20px 0 0 0;
     text-align: center;
     font-weight: 300;
+    font-size: 13px;
 }
 
 .infosExtrasDiv {
@@ -408,13 +409,13 @@ body {
 }
 
 .iconUmidity, .iconWind {
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .numVento, .numUmidade {
     font-weight: 500;
-    margin: 6px 0 0 0;
-    font-size: 15px;
+    margin: 4px 0 0 0;
+    font-size: 12px;
 }
 
 
@@ -1443,51 +1444,51 @@ body {
 
     .containerCards {
         justify-content: left;
-        height: 194px;
+        height: 191px;
     }
 
     .card {
-        padding: 0px 36px 0;
+        padding: 0px 34px 7;
     }
 
     .titleCityCard {
-        padding: 10px 0px 0 0;
+        padding: 6px 0px 0 0;
         width: 167px;
 
     }
 
     .temperaturaCity {
-        margin-bottom: 26px;
+        margin-top: -2px;
         height: 83px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     .numTemperatura {
-        font-size: 44px;
+        font-size: 33px;
     }
 
     .imgTemperaturaEDescDiv img {
-        width: 94px;
+        width: 72px;
     }
 
     .imgTemperaturaEDescDiv p {
-        margin: -23px 0 0 0;
-        font-size: 14px;
+        margin: -20px 0 0 0;
+        font-size: 13px;
 
     }
 
     .infosExtrasDiv {
         gap: 44px;
-        margin: 14px 0 0 0;
+        margin: 9px 0 0 0;
     }
     .iconUmidity, .iconWind {
-        font-size: 21px; 
+        font-size: 17px; 
     }
 
     .numVento, .numUmidade {
         font-weight: 500;
-        margin: 10px 0 0 0;
-        font-size: 14px;
+        margin: 4px 0 0 0;
+        font-size: 12px;
     }
 
 
