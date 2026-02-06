@@ -522,15 +522,24 @@ body {
      /* conteúdo nos cards imagens: */
 
     /* icone seta */
+
+    .div-icone-seta {
+        background: #e2e2e2b8;
+    }
+
+    .div-icone-seta:hover {
+        background: #e2e2e2ef;
+    }
+
     .div-icone-seta-imagem-grande-clima {
         position: relative;
         bottom: 350px;
         left: 230px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 18px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+
     }
 
     .div-icone-seta-imagem-pequena-clima {
@@ -538,26 +547,26 @@ body {
         bottom: 350px;
         left: 230px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 18px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+       
     }
     
 
     .icone-seta-clima-grande {
         rotate: 30deg;
         position: absolute;
-        top: 3px;
-        left: 3px;
+        top: 6px;
+        left: 6px;
         color: #626262;
     }
 
     .icone-seta-clima-pequena {
         rotate: 30deg;
         position: absolute;
-        top: 4px;
-        left: 3px;
+        top: 6px;
+        left: 6px;
         color: #626262;
     }
 
@@ -567,31 +576,34 @@ body {
         /* bottom: 94px; */
         /* left: 115px; */
         border: 1px solid #ffffff00;
-        padding: 16px;
+        padding: 18px;
         width: 2px;
         /* width: 93px; */
         /* height: 32px; */
         /* border-radius: 16px; */
         border-radius: 23px;
-        background: #e2e2e2e6;
+        background: #e2e2e2b8;
         visibility: hidden;
     }
 
+    .div-icone-fechar:hover {
+        background: #e2e2e2ef;
+    }
 
     .div-icone-fechar-imagem-grande-clima {
-        bottom: 90px;
-        left: 216px;
+        bottom: 96px;
+        left: 229px;
     }
         .div-icone-fechar-imagem-pequena-clima {
-        bottom: 89px;
-        left: 221px;
+        bottom: 96px;
+        left: 229px;
     }
 
     .icone-fechar-clima-grande {
         rotate: 0deg;
         position: absolute;
-        top: 8px;
-        left: 5px;
+        top: 10px;
+        left: 7px;
         color: #626262;
         font-size: 17px;
     }
@@ -602,6 +614,7 @@ body {
         font-size: 10px;
         position: absolute;
         color: white;
+        transition: transform 0.8s ease;
     }
 
     .texto-padrao-imagem-clima1 {
@@ -670,11 +683,11 @@ body {
     } */
 
     .div-icone-seta-imagem-grande-clima/* , .div-icone-seta-imagem-pequena-clima */:hover {
-        background: rgb(161, 161, 249);
+        /* background: rgb(161, 161, 249); */
     }
 
     .div-icone-seta-imagem-pequena-clima:hover {
-        background: rgb(161, 161, 249);
+        /* background: rgb(161, 161, 249); */
     }
 
         .texto-secundario-imagem-clima {
@@ -1107,10 +1120,10 @@ body {
         bottom: 389px;
         left: 216px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 17px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
     }
 
     .div-icone-seta-imagem-pequena-clima {
@@ -1118,18 +1131,18 @@ body {
         bottom: 178px;
         left: 220px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 17px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+       
     }
     
 
     .icone-seta-clima-grande {
         rotate: 30deg;
         position: absolute;
-        top: 3px;
-        left: 3px;
+        top: 4px;
+        left: 5px;
         color: #626262;
     }
 
@@ -1137,7 +1150,7 @@ body {
         rotate: 30deg;
         position: absolute;
         top: 4px;
-        left: 3px;
+        left: 5px;
         color: #626262;
     }
 
@@ -1153,7 +1166,7 @@ body {
         /* height: 32px; */
         /* border-radius: 16px; */
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
         visibility: hidden;
     }
 
@@ -1182,15 +1195,17 @@ body {
         font-size: 10px;
         position: absolute;
         color: white;
+        transition: transform 0.8s ease;
     }
 
     .texto-padrao-imagem-clima1 {
         top: 269px;
         left: 25px;
+        
     }
 
      .texto-padrao-imagem-clima2 {
-        top: 34px;
+        top: 40px;
         left: 25px;
     }
 
@@ -1294,7 +1309,7 @@ body {
         font-size: 16px;
         font-weight: 400;
         padding: 25px 0 7px;
-        width: 200px;
+        width: 195px;
     }
 
     .equatorial .descricaoClima, .subtropical .descricaoClima {
@@ -1537,10 +1552,11 @@ body {
         bottom: 386px;
         left: 235px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 17px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+
+        
     }
 
     .div-icone-seta-imagem-pequena-clima {
@@ -1548,10 +1564,10 @@ body {
         bottom: 176px;
         left: 236px;
         border: 1px solid #ffffff00;
-        padding: 15px;
+        padding: 17px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
     }
 
     .material-symbols-outlined {
@@ -1572,8 +1588,8 @@ body {
     .icone-seta-clima-grande {
         rotate: 30deg;
         position: absolute;
-        top: 3px;
-        left: 3px;
+        top: 4px;
+        left: 5px;
         color: #626262;
         font-size: 22px;
         /* font-size: 15px; */
@@ -1586,7 +1602,7 @@ body {
          rotate: 30deg;
         position: absolute;
         top: 4px;
-        left: 3px;
+        left: 5px;
         color: #626262;
         font-size: 22px;
     }
@@ -1596,13 +1612,12 @@ body {
         /* bottom: 94px; */
         /* left: 115px; */
         border: 1px solid #ffffff00;
-        padding: 16px;
+        padding: 17px;
         width: 2px;
         /* width: 93px; */
         /* height: 32px; */
         /* border-radius: 16px; */
         border-radius: 23px;
-        background: #e2e2e2e6;
         visibility: hidden;
     }
 
@@ -1620,7 +1635,7 @@ body {
         rotate: 0deg;
         position: absolute;
         top: 8px;
-        left: 5px;
+        left: 6px;
         color: #626262;
         font-size: 17px;
     }
@@ -1717,6 +1732,7 @@ body {
         font-size: 10px;
         position: absolute;
         color: white;
+        transition: transform 0.8s ease;
     }
 
     .legendaClima1 {
@@ -1768,7 +1784,7 @@ body {
         font-size: 16px;
         font-weight: 400;
         padding: 25px 0 7px;
-        width: 220px;
+        width: 212px;
     }
 
     .descricaoClima {
@@ -1984,7 +2000,7 @@ body {
         padding: 16px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
     }
 
     .div-icone-seta-imagem-pequena-clima {
@@ -1995,7 +2011,7 @@ body {
         padding: 16px;
         width: 2px;
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
     }
 
     /* .material-symbols-outlined {
@@ -2044,7 +2060,7 @@ body {
         /* height: 32px; */
         /* border-radius: 16px; */
         border-radius: 23px;
-        background: #e2e2e2e6;
+        
         visibility: hidden;
     }
 
