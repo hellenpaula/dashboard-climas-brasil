@@ -125,37 +125,39 @@
 const areaCards = document.querySelectorAll(".divArrows");
 console.log(areaCards); 
 
+const arrowsControls = document.querySelectorAll(".arrowsControls");
+
 const containerCards = document.querySelectorAll(".containerCards");
 console.log(containerCards[0].children.length);
 
 // objeto com os dados de cada slider:
 const obj = [{
     // quando referencio que ele deve buscar dentro do slider na posição 0, ele já entende que são os elementos com essa classe que estão dentro dessa área;
-    arrows: areaCards[0].querySelectorAll(".fa-solid"),
+    arrows: arrowsControls[0].querySelectorAll(".fa-solid"),
     cardsAll: areaCards[0].querySelectorAll(".card"),
     cardsLength: areaCards[0].querySelectorAll(".card").length,
     currentItem: 0,
 },
 {
-    arrows: areaCards[1].querySelectorAll(".fa-solid"),
+    arrows: arrowsControls[1].querySelectorAll(".fa-solid"),
     cardsAll: areaCards[1].querySelectorAll(".card"),
     cardsLength: areaCards[1].querySelectorAll(".card").length,
     currentItem: 0,
 },
 {
-    arrows: areaCards[2].querySelectorAll(".fa-solid"),
+    arrows: arrowsControls[2].querySelectorAll(".fa-solid"),
     cardsAll: areaCards[2].querySelectorAll(".card"),
     cardsLength: areaCards[2].querySelectorAll(".card").length,
     currentItem: 0,
 },
 {
-    arrows: areaCards[3].querySelectorAll(".fa-solid"),
+    arrows: arrowsControls[3].querySelectorAll(".fa-solid"),
     cardsAll: areaCards[3].querySelectorAll(".card"),
     cardsLength: areaCards[3].querySelectorAll(".card").length,
     currentItem: 0,
 },
 {
-    arrows: areaCards[4].querySelectorAll(".fa-solid"),
+    arrows: arrowsControls[4].querySelectorAll(".fa-solid"),
     cardsAll: areaCards[4].querySelectorAll(".card"),
     cardsLength: areaCards[4].querySelectorAll(".card").length,
     currentItem: 0,

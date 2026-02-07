@@ -252,6 +252,19 @@ body {
     /* background: #ffffffab; */
     margin: 0px 19px 0px;
     border-radius: 10px;
+
+    /* alinha os elementos no centro ajudando o titulo e as setas ficarem no centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerRegion {
+    display: flex;
+    justify-content: space-between;
+    /* width: 81%; */
+    /* margin: 0 180px 0 169px; */
+    gap: 753px;
 }
 
 .titleRegion {
@@ -262,10 +275,21 @@ body {
 
 /* arrow */
 
+    .arrowsControls {
+        display: flex;
+    }
+
+    span.material-symbols-outlined.arrow-left.arrow1.fa-solid, span.material-symbols-outlined.arrow-right.arrow1.fa-solid, span.material-symbols-outlined.arrow-left.arrow2.fa-solid, span.material-symbols-outlined.arrow-right.arrow2.fa-solid, span.material-symbols-outlined.arrow-left.arrow3.fa-solid, span.material-symbols-outlined.arrow-right.arrow3.fa-solid, span.material-symbols-outlined.arrow-left.arrow4.fa-solid, span.material-symbols-outlined.arrow-right.arrow4.fa-solid, span.material-symbols-outlined.arrow-left.arrow5.fa-solid, span.material-symbols-outlined.arrow-right.arrow5.fa-solid {
+        font-size: 48px;
+        color: rgb(64, 64, 126);
+    }
+
 .divArrows {
     display: flex;
     align-items: center;
     margin: 0px -31px;
+    position: relative;
+    justify-content: center
 }
 
 .fa-solid {
@@ -277,24 +301,21 @@ body {
 }
 
 .arrow-left {
-    /* top:0;
-    bottom:0;
-    left:0;
-    right: auto; */
-    left: 10px;
-    right: auto;
+    
+  
 }
 
 .arrow-right {
-    right: 0px;
-    left: auto;
+  rotate: 180deg;
 }
+
+
 
 .containerCards {
     display: flex;
     gap: 24px;
     /* flex-wrap: wrap; */
-    padding: 10px 0 10px 8px;
+    padding: 10px 0 10px 4px;
     overflow-x: scroll;
 
     -ms-overflow-style: none;
@@ -302,7 +323,7 @@ body {
 
     /* justify-content: center; */
     margin: 0 0 0 2px;
-    width: 1412px;
+    width: 262px;
     height: 194px;
 }
 
@@ -1052,11 +1073,63 @@ body {
         left: 24px;
     }
 } */
+;
 
+@media screen and (max-width: 750px) {
+    .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 402px;
+        margin: 0 39px 9px 28px;
+        gap: 177px;
+
+    }
+
+    .headerRegion5 {
+        gap: 117px; 
+    }
+
+
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 7px 0 34px;
+    }
+}
 
 @media screen and (min-width: 695px) {
     
+        span.material-symbols-outlined.arrow-left.arrow1.fa-solid, span.material-symbols-outlined.arrow-right.arrow1.fa-solid, span.material-symbols-outlined.arrow-left.arrow2.fa-solid, span.material-symbols-outlined.arrow-right.arrow2.fa-solid, span.material-symbols-outlined.arrow-left.arrow3.fa-solid, span.material-symbols-outlined.arrow-right.arrow3.fa-solid, span.material-symbols-outlined.arrow-left.arrow4.fa-solid, span.material-symbols-outlined.arrow-right.arrow4.fa-solid, span.material-symbols-outlined.arrow-left.arrow5.fa-solid, span.material-symbols-outlined.arrow-right.arrow5.fa-solid {
+        font-size: 48px;
+        color: rgb(64, 64, 126);
+    }
+
     
+
+
+     .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 415px;
+        margin: 0 39px 0 0px;
+        gap: 184px;
+
+    }
+
+
+
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 7px 0 -20px;
+    }
+
+    
+    .containerCards {
+        width: 514px;
+    }
+
+
     .info {
         display: flex;
         justify-content: center;
@@ -1442,9 +1515,65 @@ body {
         border-radius: 10px;
     }
 
+
+    .headerRegion {
+        display: flex;
+    /* justify-content: space-between; */
+        /* width: 127%; */
+    /* margin: 0 180px 0 169px; */
+        gap: 368px;
+    }
+
+    .arrowsControls {
+        display: flex;
+    }
+
+
+
+    /* melhorar */
+    span.material-symbols-outlined.arrow-left.arrow1.fa-solid, span.material-symbols-outlined.arrow-right.arrow1.fa-solid,  span.material-symbols-outlined.arrow-left.arrow2.fa-solid, span.material-symbols-outlined.arrow-right.arrow2.fa-solid,  span.material-symbols-outlined.arrow-left.arrow3.fa-solid, span.material-symbols-outlined.arrow-right.arrow3.fa-solid,  span.material-symbols-outlined.arrow-left.arrow4.fa-solid, span.material-symbols-outlined.arrow-right.arrow4.fa-solid,  span.material-symbols-outlined.arrow-left.arrow5.fa-solid, span.material-symbols-outlined.arrow-right.arrow5.fa-solid{
+    font-size: 48px;
+    color: rgb(64, 64, 126);
+}
+
+    .divArrows {
+        display: flex;
+        align-items: center;
+        margin: 0px -31px;
+        position: relative;
+        justify-content: center;
+    }
+
+        .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 769px;
+        margin: 0 94px 0 0px;
+        gap: 394px;
+    }
+
+
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 10px 0 56px;
+    }
+
+
     .containerCards {
         justify-content: left;
         height: 191px;
+        /* display: flex; */
+        /* gap: 24px; */
+        /* flex-wrap: wrap; */
+        /* padding: 10px 0 10px 8px; */
+        /* overflow-x: scroll; */
+        /* -ms-overflow-style: none; */
+        /* scrollbar-width: none; */
+        /* justify-content: center; */
+        /* margin: 0 0 0 2px; */
+        width: 773px;
+        /* height: 194px; */
     }
 
     .card {
@@ -1585,6 +1714,8 @@ body {
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+
+
 
     .icone-seta-clima-grande {
         rotate: 30deg;
@@ -1871,6 +2002,61 @@ body {
 
 }
 
+@media screen and (max-width: 800px) {
+
+    /* .headerRegion {
+        display: flex;
+        
+        width: 653px;
+        margin: 0 39px 0 0px;
+        gap: 379px;
+
+    } */
+
+    .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 415px;
+        margin: 0 39px 0 0px;
+        gap: 177px;
+
+    }
+
+    .headerRegion5 {
+        gap: 117px; 
+    }
+
+    /* .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 7px 0 -31px;
+
+    } */
+
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 7px 0 -20px;
+    }
+
+
+    .containerCards {
+        /* justify-content: left; */
+        /* height: 191px; */
+        /* display: flex; */
+        /* gap: 24px; */
+        /* flex-wrap: wrap; */
+        /* padding: 10px 0 10px 8px; */
+        /* overflow-x: scroll; */
+        /* -ms-overflow-style: none; */
+        /* scrollbar-width: none; */
+        /* justify-content: center; */
+        /* margin: 0 0 0 2px; */
+        max-width: 512px;
+        /* min-width: 500px; */
+        /* height: 194px; */
+    }
+}
 
 
 @media screen and (max-width: 890px) {
@@ -1908,18 +2094,41 @@ body {
         padding: 21px 0 78px 0;
     }
 
-    .titleRegion{
-        
-        padding: 0 0 17px 36px;
-        font-weight: 500;
-
+    
+    .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 766px;
+        margin: 0 107px 0 0px;
+        gap: 393px;
     }
+    
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 10px 0 56px;
+    }
+
        
       .arrow4 {
         visibility: hidden ;
     }
 
+   
 
+    .containerCards {
+        /* display: flex; */
+        /* gap: 24px; */
+        /* flex-wrap: wrap; */
+        /* padding: 10px 0 10px 8px; */
+        /* overflow-x: scroll; */
+        /* -ms-overflow-style: none; */
+        /* scrollbar-width: none; */
+        /* justify-content: center; */
+        margin: 0 9px 0 9px;
+        width: 776px;
+        /* height: 194px; */
+    }
     
         .windInfo, .umidityInfo {
         display: flex;
@@ -2301,6 +2510,37 @@ body {
 
 
 
+}
+
+@media screen and (min-width: 1060px) {
+    
+    .headerRegion {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 1004px;
+        margin: 0 94px 0 0px;
+        gap: 554px;
+    }
+    
+    .titleRegion {
+        padding: 0 0 17px 0px;
+        font-weight: 500;
+        margin: 0 10px 0 56px;
+    }
+
+        .containerCards {
+        /* display: flex; */
+        /* gap: 24px; */
+        /* flex-wrap: wrap; */
+        /* padding: 10px 0 10px 8px; */
+        /* overflow-x: scroll; */
+        /* -ms-overflow-style: none; */
+        /* scrollbar-width: none; */
+        /* justify-content: center; */
+        margin: 0 3px 0 1px;
+        width: 1027px;
+        /* height: 194px; */
+    }
 }
 
 @media screen and (min-width: 1270px) {
