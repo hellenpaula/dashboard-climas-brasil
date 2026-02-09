@@ -224,6 +224,7 @@ body {
 
 .subtituloAzul {
     color: #4e6375;
+    font-weight: 500;
 }
 
 .tituloAzul {
@@ -239,6 +240,7 @@ body {
 
 .subtituloVerde {
     color: #577646f0; 
+    font-weight: 500;
 }
 
 .tituloVerde {
@@ -269,7 +271,7 @@ body {
 
 .titleRegion {
     color: #545e90;
-    padding: 0 0 17px 9px;
+    padding: 0 0 0px 9px;
 }
 
 
@@ -300,13 +302,13 @@ body {
 
 }
 
-.arrow-left {
-    
+.arrow-left, .arrow-right {
+    font-size: 36px;
   
 }
 
 .arrow-right {
-  rotate: 180deg;
+  /* rotate: 180deg; */
 }
 
 
@@ -329,19 +331,19 @@ body {
 
 .card {
     background-color: white;
-    padding: 0px 34px 7px;
+    padding: 0px 32px 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 33px;
-    box-shadow: 1px 1px 12px #36323229;
+    box-shadow: 3px 1px 12px #36323254;;
     transition: all 0.4s;
     cursor: pointer;
 }
 
 .card:hover {
     scale: 1.02;
-    box-shadow: 0px 1px 9px #36323291;
+    box-shadow: 3px 1px 12px #3632329c;
 
     
 }
@@ -361,7 +363,7 @@ body {
 .titleCityCard {
     text-align: center;
     font-size: 22px;
-    padding: 6px 0px 0 0;
+    padding: 7px 0px 0 0;
     font-weight: 500;
     width: 167px;
 }
@@ -395,8 +397,9 @@ body {
     display: flex;
     align-items: center;
     height: 83px;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 15px;
+    margin-top: -6px;
+    margin-bottom: 6px;
     width: 139px
 
 }
@@ -407,7 +410,7 @@ body {
 }
 
 .imgTemperaturaEDescDiv img {
-    width: 72px;
+    width: 66px;
 
     
 
@@ -423,6 +426,7 @@ body {
 .infosExtrasDiv {
     display: flex;
     gap: 30px;
+    margin: 5px 0 0 0;
 }
 
 .windInfo, .umidityInfo {
@@ -436,7 +440,7 @@ body {
 .numVento, .numUmidade {
     font-weight: 500;
     margin: 4px 0 0 0;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -464,10 +468,11 @@ body {
 
     .subtituloSectionClima {
         /* color: #577646f0; */
+        font-weight: 500;
     }
     .tituloSectionClima {
         /* color: #437118; */
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
     }
 
@@ -477,7 +482,7 @@ body {
         /* flex-direction: column; */
         display: grid;
         /* grid-template-columns: 0fr 0fr; */
-        gap: 46px;
+        gap: 32px;
         /* margin: 0 27px; */
         grid-template-areas: "clima1 "
                              "clima2 "
@@ -514,7 +519,7 @@ body {
         width: 289px;
         height: 363px;
         /* margin: -41px 0 0 0; */
-        border-radius: 31px;
+        border-radius: 33px;
         overflow: hidden;
         /* box-shadow: 1px 1px 10px #00000036; */
         position: relative;
@@ -527,7 +532,7 @@ body {
         width: 100%;
         height: 100%;
         filter: brightness(0.80);
-        border-radius: 31px;
+        border-radius: 33px;
     }
 
     .imgClimaSecundario {
@@ -577,18 +582,20 @@ body {
     
 
     .icone-seta-clima-grande {
-        rotate: 30deg;
+        rotate: -40deg;
         position: absolute;
-        top: 6px;
-        left: 6px;
+        top: 7px;
+        left: 5px;
+        font-size: 21px;
         color: #626262;
     }
 
     .icone-seta-clima-pequena {
-        rotate: 30deg;
+        rotate: -40deg;
         position: absolute;
-        top: 6px;
-        left: 6px;
+        top: 7px;
+        left: 5px;
+        font-size: 21px;
         color: #626262;
     }
 
@@ -1119,7 +1126,7 @@ body {
 
 
     .titleRegion {
-        padding: 0 0 17px 0px;
+        padding: 0 0 0px 0px;
         font-weight: 500;
         margin: 0 7px 0 -20px;
     }
@@ -1156,7 +1163,7 @@ body {
         display: grid;
         grid-template-columns: 17rem 17rem;
         grid-template-rows: 190px 190px 190px 190px;
-        gap: 20px;
+        gap: 22px;
         margin: 0 14px;
         grid-template-areas: "clima1 clima2"
                              "clima1 clima3"
@@ -1213,18 +1220,20 @@ body {
     
 
     .icone-seta-clima-grande {
-        rotate: 30deg;
+        rotate:-40deg;
         position: absolute;
-        top: 4px;
-        left: 5px;
+        top: 5px;
+        left: 4px;
+        font-size: 21px;
         color: #626262;
     }
 
     .icone-seta-clima-pequena {
-        rotate: 30deg;
+        rotate: -40deg;
         position: absolute;
-        top: 4px;
-        left: 5px;
+        top: 5px;
+        left: 4px;
+        font-size: 21px;
         color: #626262;
     }
 
@@ -1509,6 +1518,11 @@ body {
         width: 530px;
     }
 
+
+    .arrow-left, .arrow-right {
+        font-size: 36px;
+    }
+
     .containerMain {
         /* background: #ffffffab; */
         margin: 0px 61px 0px;
@@ -1548,13 +1562,13 @@ body {
         display: flex;
         /* justify-content: space-between; */
         width: 769px;
-        margin: 0 94px 0 0px;
+        margin: 0 94px 19px 0px;
         gap: 394px;
     }
 
 
     .titleRegion {
-        padding: 0 0 17px 0px;
+        padding: 0 0 0px 0px;
         font-weight: 500;
         margin: 0 10px 0 56px;
     }
@@ -1562,7 +1576,7 @@ body {
 
     .containerCards {
         justify-content: left;
-        height: 191px;
+        height: 182px;
         /* display: flex; */
         /* gap: 24px; */
         /* flex-wrap: wrap; */
@@ -1577,27 +1591,27 @@ body {
     }
 
     .card {
-        padding: 0px 34px 7px;
+        padding: 0px 32px 7px;
     }
 
     .titleCityCard {
-        padding: 6px 0px 0 0;
+        padding: 7px 0px 0 0;
         width: 167px;
 
     }
 
     .temperaturaCity {
-        margin-top: -2px;
+        margin-top: -6px;
         height: 83px;
         margin-bottom: 6px;
     }
 
     .numTemperatura {
-        font-size: 33px;
+        font-size: 35px;
     }
 
     .imgTemperaturaEDescDiv img {
-        width: 72px;
+        width: 66px;
     }
 
     .imgTemperaturaEDescDiv p {
@@ -1608,7 +1622,7 @@ body {
 
     .infosExtrasDiv {
         gap: 44px;
-        margin: 9px 0 0 0;
+        margin: 5px 0 0 0;
     }
     .iconUmidity, .iconWind {
         font-size: 17px; 
@@ -1617,7 +1631,7 @@ body {
     .numVento, .numUmidade {
         font-weight: 500;
         margin: 4px 0 0 0;
-        font-size: 12px;
+        font-size: 11px;
     }
 
 
@@ -1657,7 +1671,7 @@ body {
         display: grid;
         grid-template-columns: 18rem 18rem;
         grid-template-rows: 190px 190px 190px 190px;
-        gap: 20px;
+        gap: 24px;
         margin: 0px 27px;
         padding: 91px 14px 62px;
         /* 4 linhas, os cards maiores ocupam 2 linhas as menores ocupam 1  linhas */
@@ -1718,12 +1732,12 @@ body {
 
 
     .icone-seta-clima-grande {
-        rotate: 30deg;
+        rotate: -40deg;
         position: absolute;
-        top: 4px;
+        top: 6px;
         left: 5px;
         color: #626262;
-        font-size: 22px;
+        font-size: 20px;
         /* font-size: 15px; */
         /* border: 1px solid white; */
         /* border-radius: 50%; */
@@ -1731,12 +1745,12 @@ body {
     }
 
     .icone-seta-clima-pequena {
-         rotate: 30deg;
+         rotate: -40deg;
         position: absolute;
-        top: 4px;
+        top: 7px;
         left: 5px;
         color: #626262;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .div-icone-fechar {
@@ -1777,7 +1791,7 @@ body {
         width: 100%;
         height: 100%;
         /* margin: -41px 0 0 0; */
-        border-radius: 31px;
+        border-radius: 33px;
         overflow: hidden;
 
     }
@@ -2016,14 +2030,29 @@ body {
     .headerRegion {
         display: flex;
         /* justify-content: space-between; */
-        width: 415px;
-        margin: 0 39px 0 0px;
-        gap: 177px;
+        width: 253px;
+        margin: 0 39px 20px 33px;
+        gap: 81px;
+        align-items: center;
 
     }
 
+    .headerRegion1 {
+        margin: 0px 59px 20px 33px;
+    }
+
     .headerRegion5 {
-        gap: 117px; 
+        gap: 6px; 
+        width: 282px;
+        margin: 0 38px 20px 33px;
+    }
+
+    .headerRegion5 .titleRegion {
+        padding: 0 0 0 0;
+    }
+
+    .headerRegion5 .arrowsControls {
+        margin: 0 -16px 0 0;
     }
 
     /* .titleRegion {
@@ -2034,7 +2063,7 @@ body {
     } */
 
     .titleRegion {
-        padding: 0 0 17px 0px;
+        /* padding: 0 0 17px 0px; */
         font-weight: 500;
         margin: 0 7px 0 -20px;
     }
@@ -2042,7 +2071,7 @@ body {
 
     .containerCards {
         /* justify-content: left; */
-        /* height: 191px; */
+        height: 182px;
         /* display: flex; */
         /* gap: 24px; */
         /* flex-wrap: wrap; */
@@ -2099,7 +2128,7 @@ body {
         display: flex;
         /* justify-content: space-between; */
         width: 766px;
-        margin: 0 107px 0 0px;
+        margin: 0 107px 19px 0px;
         gap: 393px;
     }
     
@@ -2107,6 +2136,10 @@ body {
         padding: 0 0 17px 0px;
         font-weight: 500;
         margin: 0 10px 0 56px;
+    }
+
+    .arrow-left, .arrow-right {
+        font-size: 36px;
     }
 
        
@@ -2172,7 +2205,7 @@ body {
         grid-template-columns: 19rem 19rem;
         grid-template-rows: 196px 196px 196px 196px;
         padding: 91px 14px 62px;
-        gap: 15px;
+        gap: 24px;
         grid-template-areas: "clima1 clima2"
                              "clima1 clima3"
                              "clima4 clima6"
@@ -2190,7 +2223,7 @@ body {
         width: 100%;
         height: 100%;
         /* margin: 15px 0 0 0; */
-        border-radius: 31px;
+        border-radius: 33px;
         overflow: hidden;
         position: relative;
 
@@ -2208,19 +2241,20 @@ body {
         left: 249px;
         border: 1px solid #ffffff00;
         padding: 16px;
-        width: 2px;
-        border-radius: 23px;
+        width: 4px;
+        border-radius: 45px;
+        height: 33px;
         
     }
 
     .div-icone-seta-imagem-pequena-clima {
         position: relative;
-        bottom: 187px;
+        bottom: 186px;
         left: 249px;
         border: 1px solid #ffffff00;
         padding: 16px;
-        width: 2px;
-        border-radius: 23px;
+        width: 4px;
+        border-radius: 33px;
         
     }
 
@@ -2240,10 +2274,11 @@ body {
 } */
 
     .icone-seta-clima-grande {
-        rotate: 30deg;
+        rotate: -40deg;
         position: absolute;
-        top: 4px;
-        left: 4px;
+        top: 7px;
+        left: 5px;
+        font-size: 18px;
         color: #626262;
         /* font-size: 15px; */
         /* border: 1px solid white; */
@@ -2252,10 +2287,11 @@ body {
     }
 
     .icone-seta-clima-pequena {
-         rotate: 30deg;
+         rotate: -40deg;
         position: absolute;
-        top: 4px;
-        left: 4px;
+        top: 8px;
+        left: 5px;
+        font-size: 18px;
         color: #626262;
     }
 
@@ -2518,7 +2554,7 @@ body {
         display: flex;
         /* justify-content: space-between; */
         width: 1004px;
-        margin: 0 94px 0 0px;
+        margin: 0 94px 19px 0px;
         gap: 554px;
     }
     
@@ -2526,6 +2562,12 @@ body {
         padding: 0 0 17px 0px;
         font-weight: 500;
         margin: 0 10px 0 56px;
+    }
+
+    .subtituloTitleRegion {
+        color: #80808082;
+        font-size: 20px;
+        margin: 4px 0 0 5px;
     }
 
         .containerCards {
