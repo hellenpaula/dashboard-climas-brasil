@@ -233,7 +233,7 @@ body {
 
 
 .divTituloVerde {
-    margin: -170px 0 22px;
+    margin: -233px 0 85px;
     padding: 0 0 100px;
     
 }
@@ -455,7 +455,7 @@ body {
         justify-content: center;
         align-items: center;
         /* margin: 206px 0 0; */
-        padding: 0 0 140px;
+        padding: 72px 0 72px;
         flex-direction: column;
         background: #cdd2de6b;
         
@@ -1109,6 +1109,10 @@ body {
         font-weight: 500;
         margin: 0 7px 0 34px;
     }
+
+    .info {
+        margin: 270px 19px 114px;
+    }
 }
 
 @media screen and (min-width: 695px) {
@@ -1148,7 +1152,7 @@ body {
         display: flex;
         justify-content: center;
         margin: 270px 0 0;
-        padding: 0 0 140px;
+        padding:75px 0 75px;
         flex-direction: column;
     }
 
@@ -1652,7 +1656,7 @@ body {
         display: flex;
         justify-content: center;
         /* margin: 270px 0 0; */
-        padding: 0 0 140px;
+        padding: 21px 0 21px;
         flex-direction: column;
 
         /* design do background climas */
@@ -2098,7 +2102,7 @@ body {
 
 @media screen and (max-width: 890px) {
     .info {
-        margin: 270px 35px 114px;
+        margin: 225px 19px 114px;
     }
 }
 
@@ -2200,7 +2204,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 0 0;
+        padding: 21px 0 ;
 
         /* design background */
         margin: 285px 53px 124px;
